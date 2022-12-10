@@ -22,13 +22,12 @@ const Business = () =>  (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        You do the business, <br className="sm:block hidden" /> we’ll handle
+        You have the treatment, <br className="sm:block hidden" /> we’ll handle
         the money.
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        With the right credit card, you can improve your financial life by
-        building credit, earning rewards and saving money. But with hundreds
-        of credit cards on the market.
+      We brought the most innovative and thought-advancing leaders in medical billing and revenue cycle management together to progress this industry into the modern, technological age. We seek a level of professionalism and analysis you won’t find elsewhere.
+
       </p>
 
       <Button styles={`mt-10`} />

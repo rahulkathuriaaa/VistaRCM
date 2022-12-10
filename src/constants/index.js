@@ -23,23 +23,23 @@ export const features = [
   {
     id: "feature-1",
     icon: star,
-    title: "Rewards",
+    title: "Perks",
     content:
-      "The best credit cards offer some tantalizing combinations of promotions and prizes",
+      "Our team comes with 2 decade of experience and  don’t believe in vendor /client philosophy.",
   },
   {
     id: "feature-2",
     icon: shield,
     title: "100% Secured",
     content:
-      "We take proactive steps make sure your information and transactions are secure.",
+      "Rather we consider our self as an extension of your team and we work as a partner with a clear objective of increased revenue.",
   },
   {
     id: "feature-3",
     icon: send,
     title: "Balance Transfer",
     content:
-      "A balance transfer credit card can save you a lot of money in interest charges.",
+      "We improve the financial life of our provider, giving them the freedom to focus on patient care.",
   },
 ];
 
@@ -73,18 +73,18 @@ export const feedback = [
 export const stats = [
   {
     id: "stats-1",
-    title: "User Active",
-    value: "3800+",
+    title: "Cost Reduced",
+    value: "20%",
   },
   {
     id: "stats-2",
-    title: "Trusted by Company",
-    value: "230+",
+    title: "Revenue Improved",
+    value: "5%",
   },
   {
     id: "stats-3",
-    title: "Transaction",
-    value: "$230M+",
+    title: "Transparency",
+    value: "100%",
   },
 ];
 
