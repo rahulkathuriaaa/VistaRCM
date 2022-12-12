@@ -1,8 +1,9 @@
 import { useState } from "react";
 
 import { close, logo, menu } from "../assets";
+// import img from "../assets/vistarcm.png"
 import { navLinks } from "../constants";
-import DropDown from "./DropDown";
+// import DropDown from "./DropDown";
 
 const Navbar = () => {
   const [active, setActive] = useState("Home");
