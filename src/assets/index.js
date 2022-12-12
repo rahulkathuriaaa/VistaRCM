@@ -24,6 +24,30 @@ import people01 from "./people01.png";
 import people02 from "./people02.png";
 import people03 from "./people03.png";
 
+import advancedmd from "./advancedmd.png";
+import alleva from "./alleva.png";
+import bestnotes from "./bestnotes.png";
+import cerner from "./cerner.png";
+import cpsi from "./cpsi.png";
+import drchrono from "./drchrono.png";
+import eclinicalworks from "./eclinicalworks.png";
+import collectly from "./collectly.png";
+import elico from "./elico.png";
+import experity from "./experity.png";
+import GreenWay from "./GreenWay.png";
+import HST from "./HST.png";
+import imagetrend from "./imagetrend.png";
+import InboxHealth from "./InboxHealth.png";
+import Kipu from "./Kipu.png";
+import medicusit from "./medicusit.png";
+import meditech from "./meditech.png";
+import medstreaming from "./medstreaming.png";
+import modmed from "./modmed.png";
+import sunwave from "./sunwave.png";
+import waystar from "./waystar.png";
+import zoll from "./zoll.png";
+import theranest from "./theranest.png";
+import vistarcm from "./vistarcm.png";
 export {
   airbnb,
   bill,
@@ -50,4 +74,28 @@ export {
   people01,
   people02,
   people03,
+  advancedmd,
+  alleva,
+  collectly,
+  InboxHealth,
+  modmed,
+  medicusit,
+  zoll,
+  imagetrend,
+  elico,
+  drchrono,
+  GreenWay,
+  Kipu,
+  waystar,
+  eclinicalworks,
+  cerner,
+  experity,
+  meditech,
+  cpsi,
+  medstreaming,
+  HST,
+  bestnotes,
+  sunwave,
+  theranest,
+  vistarcm,
 };

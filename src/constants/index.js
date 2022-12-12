@@ -10,12 +10,13 @@ export const navLinks = [
     title: "Features",
   },
   {
-    id: "product",
-    title: "Product",
+    id: "aboutus",
+    title: "About Us",
   },
   {
-    id: "clients",
-    title: "Clients",
+    id: "service",
+    title: "Services",
+    
   },
 ];
 
@@ -37,7 +38,7 @@ export const features = [
   {
     id: "feature-3",
     icon: send,
-    title: "Balance Transfer",
+    title: "Transparency",
     content:
       "We improve the financial life of our provider, giving them the freedom to focus on patient care.",
   },
