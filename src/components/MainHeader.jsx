@@ -16,37 +16,95 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { vistarcm } from '../assets'
+import { Link } from 'react-router-dom'
 
 const solutions = [
   {
-    name: 'Analytics',
+    name: 'Physicians Billing Services',
     description: 'Get a better understanding of where your traffic is coming from.',
-    href: '#',
+    href: '/service/physician-billing-services',
     icon: ChartBarIcon,
   },
   {
-    name: 'Engagement',
+    name: 'Medical Insurance Billing & Coding',
     description: 'Speak directly to your customers in a more meaningful way.',
-    href: '#',
+    href: '/service/medical-insurance-billing',
     icon: CursorArrowRaysIcon,
   },
-  { name: 'Security', description: "Your customers' data will be safe and secure.", href: '#', icon: ShieldCheckIcon },
   {
-    name: 'Integrations',
-    description: "Connect with third-party tools that you're already using.",
-    href: '#',
-    icon: Squares2X2Icon,
+    name: 'Medical Billing And Collections',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/medical-billing-and-collections',
+    icon: CursorArrowRaysIcon,
   },
   {
-    name: 'Automations',
-    description: 'Build strategic funnels that will drive your customers to convert',
-    href: '#',
-    icon: ArrowPathIcon,
+    name: 'Fee Schedule Evaluations',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/fee-schedule-evaluations',
+    icon: CursorArrowRaysIcon,
   },
+  {
+    name: 'Healthcare Contract Management',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/healthcare-contract-management',
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: 'A/R Recovery',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/ar-recovery',
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: 'Practice Management',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/physician-medical-practice-management',
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: 'Patient Eligibility Verification',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/eligibility-verification',
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: 'Revenue Cycle Management ',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/revenue-cycle-management',
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: ' Healthcare Denial Management',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/healthcare-denial-management',
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: 'Physician Credentialing ',
+    description: 'Speak directly to your customers in a more meaningful way.',
+    href: '/service/phycisian-credentialing',
+    icon: CursorArrowRaysIcon,
+  },
+  // { name: 'Medical Billing And Collections',
+  //  description: "Your customers' data will be safe and secure.", 
+  //  href: 'service/medical-billing-and-collection', 
+  //  icon: ShieldCheckIcon },
+  // {
+  //   name: 'Integrations',
+  //   description: "Connect with third-party tools that you're already using.",
+  //   href: 'service/medical-billing-and-collection',
+  //   icon: Squares2X2Icon,
+  // },
+  // {
+  //   name: 'Automations',
+  //   description: 'Build strategic funnels that will drive your customers to convert',
+  //   href: '#',
+  //   icon: ArrowPathIcon,
+  // },
 ]
 const callsToAction = [
   { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact Sales', href: '#', icon: PhoneIcon },
+  { name: 'Contact', href: 'mailto:amitmalhotra555@gmail.com', target:"_blank", icon: PhoneIcon },
 ]
 const resources = [
   {
@@ -85,14 +143,14 @@ export default function MainHeader() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
-            <a href="#">
+            <Link to="/">
               <span className="sr-only">Your Company</span>
               <img
                 className="h-8 w-auto sm:h-10"
                 src={vistarcm}
                 alt=""
               />
-            </a>
+            </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
             <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
@@ -110,7 +168,7 @@ export default function MainHeader() {
                       'group inline-flex items-center rounded-md text-base text-gray-500 hover:text-white font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
                     )}
                   >
-                    <span>Solutions</span>
+                    <span>Our Services</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
@@ -133,9 +191,9 @@ export default function MainHeader() {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {solutions.map((item) => (
-                            <a
+                            <Link
                               key={item.name}
-                              href={item.href}
+                              to={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
                               <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
@@ -143,7 +201,7 @@ export default function MainHeader() {
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="space-y-6 bg-gray-50 px-5 py-5 sm:flex sm:space-y-0 sm:space-x-10 sm:px-8">
@@ -166,12 +224,12 @@ export default function MainHeader() {
               )}
             </Popover>
 
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-white">
-              Pricing
-            </a>
-            <a href="#" className="text-base font-medium text-gray-500 hover:text-white">
-              Docs
-            </a>
+            <Link to="/" className="text-base font-medium text-gray-500 hover:text-white">
+              Home
+            </Link>
+            <Link to="/about" className="text-base font-medium text-gray-500 hover:text-white">
+              About Us
+            </Link>
 
             <Popover className="relative">
               {({ open }) => (

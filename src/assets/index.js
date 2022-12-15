@@ -48,9 +48,16 @@ import waystar from "./waystar.png";
 import zoll from "./zoll.png";
 import theranest from "./theranest.png";
 import vistarcm from "./vistarcm.png";
+import checkup from "./checkup.jpg";
+import reception from "./reception.jpg";
+import service from "./service.jpg";
+import physicianbilling from './physicianbilling.jpg'
 export {
   airbnb,
   bill,
+  checkup,
+  service,
+  reception,
   binance,
   card,
   coinbase,
@@ -98,4 +105,5 @@ export {
   sunwave,
   theranest,
   vistarcm,
+  physicianbilling,
 };
