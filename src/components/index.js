@@ -13,6 +13,7 @@ import MainHeader from "./MainHeader";
 import Context from "./Context";
 import Titlebar from "./TitleBar";
 import OtherContext from "./OtherContext";
+import ChatBot from "./ChatBot";
 
 export {
   Navbar,
@@ -30,4 +31,5 @@ export {
   Context,
   Titlebar,
   OtherContext,  
+  ChatBot,
 };

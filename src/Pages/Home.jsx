@@ -10,6 +10,7 @@ import Billing from "../components/Billing";
 import CardDeal from "../components/CardDeal";
 import Clients from "../components/Clients";
 import CTA from "../components/CTA";
+import { ChatBot } from "../components";
 import Footer from "../components/Footer";
 
 
@@ -24,6 +25,7 @@ const Home = () => (
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <Hero />
+        <ChatBot/>
       </div>
     </div>
     

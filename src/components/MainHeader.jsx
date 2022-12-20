@@ -153,11 +153,15 @@ export default function MainHeader() {
             </Link>
           </div>
           <div className="-my-2 -mr-2 md:hidden">
+            
             <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
+          <Link to="/" className="text-base font-medium text-gray-500 hover:text-white">
+              Home
+            </Link>
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
             <Popover className="relative">
               {({ open }) => (
@@ -224,12 +228,12 @@ export default function MainHeader() {
               )}
             </Popover>
 
-            <Link to="/" className="text-base font-medium text-gray-500 hover:text-white">
-              Home
-            </Link>
             <Link to="/about" className="text-base font-medium text-gray-500 hover:text-white">
               About Us
             </Link>
+            {/* <Link to="/about" className="text-base font-medium text-gray-500 hover:text-white">
+              About Us
+            </Link> */}
 
             <Popover className="relative">
               {({ open }) => (
