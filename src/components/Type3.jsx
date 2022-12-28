@@ -7,7 +7,7 @@ export const Type3 = (props) => {
               {props.title}
             </p>
           </div>
-          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-white sm:text-4xl md:mx-auto">
+          <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold leading-none tracking-tight text-black sm:text-4xl md:mx-auto">
             <span className="relative inline-block">
               <svg
                 viewBox="0 0 52 24"
@@ -60,10 +60,10 @@ export const Type3 = (props) => {
                 </div>
               </div>
               <div>
-                <h6 className="mb-2 font-semibold leading-5 bg-primary text-white">
+                <h6 className="mb-2 font-semibold leading-5 bg-primary text-black">
                   {props.head1}
                 </h6>
-                <p className="text-sm text-white">
+                <p className="text-sm text-black">
                   {props.data1}
                 </p>
                 <hr className="w-full my-6 border-white" />
@@ -88,10 +88,10 @@ export const Type3 = (props) => {
                 </div>
               </div>
               <div>
-                <h6 className="mb-2 font-semibold leading-5  text-white">
+                <h6 className="mb-2 font-semibold leading-5  text-black">
                 {props.head2}
                 </h6>
-                <p className="text-sm text-white">
+                <p className="text-sm text-black">
                 {props.data2}
                 </p>
                 <hr className="w-full my-6 border-white" />
@@ -116,10 +116,10 @@ export const Type3 = (props) => {
                 </div>
               </div>
               <div>
-                <h6 className="mb-2 font-semibold leading-5 text-white">
+                <h6 className="mb-2 font-semibold leading-5 text-black">
                 {props.head3}
                 </h6>
-                <p className="text-sm text-white">
+                <p className="text-sm text-black">
                 {props.data3}
                 </p>
               </div>

@@ -1,6 +1,6 @@
 const Titlebar = (props) => {
     return (
-      // <div className="relative w-full h-[271px] text-left text-lg text-white font-roboto">
+      // <div className="relative w-full h-[271px] text-left text-lg text-black font-roboto">
       //   <div className="absolute top-[0px] left-[0px] w-[1440px] h-[271px] mix-blend-multiply">
       //     <div className="absolute top-[-38.71px] left-[-99.48px] w-[1540.28px] h-[309.71px] bg-black" />
       //     <div className="absolute top-[0px] left-[0px] bg-gray-500" />
@@ -37,11 +37,11 @@ const Titlebar = (props) => {
               Services
             </div>
             <div className="absolute top-[8px] left-[65px] bg-white w-[2px] h-[14px] opacity-[0.6]" />
-            <div className="absolute top-[0px] left-[0px] leading-[30px] text-white text-center inline-block">
+            <div className="absolute top-[0px] left-[0px] leading-[30px] text-black text-center inline-block">
               Home
             </div>
           </div>
-          <b className="absolute top-[127px] left-[500px] text-[40px] leading-[50px] inline-block text-white text-center">
+          <b className="absolute top-[127px] left-[500px] text-[40px] text-center sm:text-left leading-[50px] inline-block text-white text-center">
           {props.headTitle}
           </b>
         </div>
@@ -51,23 +51,23 @@ const Titlebar = (props) => {
   export default Titlebar;
   
 
-  <div className="absolute top-[152px] left-[0px] w-[1920px] h-[350px] text-violet">
-          <div className="absolute top-[0px] left-[0px] bg-gray-700 w-[1920px] h-[350px]" />
-          <img
-            className="absolute top-[0px] left-[0px] w-[1920px] h-[350px] object-cover mix-blend-multiply"
-            alt=""
-            src="../mask-group15@2x.png"
-          />
-          <div className="absolute top-[193px] left-[885px] w-[151px] h-[30px]">
-            <div className="absolute top-[0px] left-[83px] leading-[30px] inline-block">
-              Services
-            </div>
-            <div className="absolute top-[8px] left-[65px] bg-white w-[2px] h-[14px] opacity-[0.6]" />
-            <div className="absolute top-[0px] left-[0px] leading-[30px] text-white text-center inline-block">
-              Home
-            </div>
-          </div>
-          <b className="absolute top-[127px] left-[852px] text-[40px] leading-[50px] inline-block text-white text-center">
-            What We Do
-          </b>
-        </div>
+  // <div className="absolute top-[152px] left-[0px] w-[1920px] h-[350px] text-violet">
+  //         <div className="absolute top-[0px] left-[0px] bg-gray-700 w-[1920px] h-[350px]" />
+  //         <img
+  //           className="absolute top-[0px] left-[0px] w-[1920px] h-[350px] object-cover mix-blend-multiply"
+  //           alt=""
+  //           src="../mask-group15@2x.png"
+  //         />
+  //         <div className="absolute top-[193px] left-[885px] w-[151px] h-[30px]">
+  //           <div className="absolute top-[0px] left-[83px] leading-[30px] inline-block">
+  //             Services
+  //           </div>
+  //           <div className="absolute top-[8px] left-[65px] bg-white w-[2px] h-[14px] opacity-[0.6]" />
+  //           <div className="absolute top-[0px] left-[0px] leading-[30px] text-black text-center inline-block">
+  //             Home
+  //           </div>
+  //         </div>
+  //         <b className="absolute top-[127px] left-[852px] text-[40px] leading-[50px] inline-block text-black text-center">
+  //           What We Do
+  //         </b>
+  //       </div>

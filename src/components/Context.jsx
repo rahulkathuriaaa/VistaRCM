@@ -1,8 +1,9 @@
 import { checkup, reception, service } from "../assets";
+import styles from "../style";
 
 const Context = (props) => {
     return (
-      <div className="relative w-full h-[670px] text-left text-base text-white font-roboto">
+      <div className="relative w-full h-[670px] text-left text-base text-black font-roboto">
         <section className="absolute top-[0px] left-[0px] w-[600px] h-[670px]">
           <img
             className="absolute top-[121px] left-[300px] w-[298.67px] h-[428.67px] rounded-[15px]"

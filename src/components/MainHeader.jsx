@@ -1,7 +1,7 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
 import {
-  ArrowPathIcon,
+  // ArrowPathIcon,
   Bars3Icon,
   BookmarkSquareIcon,
   CalendarIcon,
@@ -11,77 +11,80 @@ import {
   PhoneIcon,
   PlayIcon,
   ShieldCheckIcon,
-  Squares2X2Icon,
+  // Squares2X2Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { vistarcm } from '../assets'
 import { Link } from 'react-router-dom'
+import './MainHeader.css';
+// import CheckOutsideClick from './CheckOutsideClick'
+
 
 const solutions = [
   {
     name: 'Physicians Billing Services',
-    description: 'Get a better understanding of where your traffic is coming from.',
+    description: '',
     href: '/service/physician-billing-services',
     icon: ChartBarIcon,
   },
   {
-    name: 'Medical Insurance Billing & Coding',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    name: 'Medical Coding',
+    description: '',
     href: '/service/medical-insurance-billing',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Medical Billing And Collections',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/medical-billing-and-collections',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Fee Schedule Evaluations',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/fee-schedule-evaluations',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Healthcare Contract Management',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/healthcare-contract-management',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'A/R Recovery',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/ar-recovery',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Practice Management',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/physician-medical-practice-management',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Patient Eligibility Verification',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/eligibility-verification',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Revenue Cycle Management ',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/revenue-cycle-management',
     icon: CursorArrowRaysIcon,
   },
   {
     name: ' Healthcare Denial Management',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/healthcare-denial-management',
     icon: CursorArrowRaysIcon,
   },
   {
     name: 'Physician Credentialing ',
-    description: 'Speak directly to your customers in a more meaningful way.',
+    description: ' ',
     href: '/service/phycisian-credentialing',
     icon: CursorArrowRaysIcon,
   },
@@ -103,34 +106,34 @@ const solutions = [
   // },
 ]
 const callsToAction = [
-  { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact', href: 'mailto:amitmalhotra555@gmail.com', target:"_blank", icon: PhoneIcon },
+  // { name: 'Watch Demo', href: '#', icon: PlayIcon },
+  { name: 'Contact', href: 'mailto:support@vistarcmsolutions.com', target:"_blank", icon: PhoneIcon },
 ]
 const resources = [
   {
-    name: 'Help Center',
-    description: 'Get all of your questions answered in our forums or contact support.',
-    href: '#',
+    name: 'About VistaRCM',
+    href: '/aboutvistarcm',
     icon: LifebuoyIcon,
   },
   {
-    name: 'Guides',
-    description: 'Learn how to maximize our platform to get the most out of it.',
-    href: '#',
+    name: 'Testimonials',
+    href: '/about/testimonials',
     icon: BookmarkSquareIcon,
   },
   {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
+    name: 'Careers',
+    href: '/about/careers',
     icon: CalendarIcon,
   },
-  { name: 'Security', description: 'Understand how we take your privacy seriously.', href: '#', icon: ShieldCheckIcon },
+  { name: 'Contact Us', 
+  href: '#', 
+  icon: ShieldCheckIcon 
+},
 ]
 const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
+  { id: 1, name: 'Solutions for the Revenue Cycle and clinical labor shortage', href: '/about/blogs' },
+  // { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
+  // { id: 3, name: 'Improve your customer experience', href: '#' },
 ]
 
 function classNames(...classes) {
@@ -138,8 +141,16 @@ function classNames(...classes) {
 }
 
 export default function MainHeader() {
+  // const [open, setOpen] = useState(false);
+
+  // const handleClickOpen = () =>{
+  //   setOpen(true);
+  // }
+  // const handleClose = () =>{
+  //   setOpen(false);
+  // }
   return (
-    <Popover className="relative">
+    <Popover className="relative bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
@@ -159,7 +170,7 @@ export default function MainHeader() {
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
           </div>
-          <Link to="/" className="text-base font-medium text-gray-500 hover:text-white">
+          <Link to="/" className="text-base font-medium text-gray-500 hover:text-black hidden md:block">
               Home
             </Link>
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
@@ -169,7 +180,7 @@ export default function MainHeader() {
                   <Popover.Button
                     className={classNames(
                       open ? '' : '',
-                      'group inline-flex items-center rounded-md text-base text-gray-500 hover:text-white font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                      'group inline-flex items-center rounded-md text-base text-gray-500 hover:text-black font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 lg:h-2'
                     )}
                   >
                     <span>Our Services</span>
@@ -191,9 +202,9 @@ export default function MainHeader() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
-                      <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
-                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 overflow-y:scroll">
+                      <div className="lg:h-96 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-y:scroll" >
+                        <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700" >
                           {solutions.map((item) => (
                             <Link
                               key={item.name}
@@ -227,13 +238,13 @@ export default function MainHeader() {
                 </>
               )}
             </Popover>
-
-            <Link to="/about" className="text-base font-medium text-gray-500 hover:text-white">
+{/* 
+            <Link to="/" className="text-base font-medium text-gray-500 hover:text-black sm:hidden md:flex">
+              Home
+            </Link> */}
+            <Link to="/about" className="text-base font-medium text-gray-500 hover:text-black">
               About Us
             </Link>
-            {/* <Link to="/about" className="text-base font-medium text-gray-500 hover:text-white">
-              About Us
-            </Link> */}
 
             <Popover className="relative">
               {({ open }) => (
@@ -241,10 +252,10 @@ export default function MainHeader() {
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md text-base font-medium text-gray-500 hover:text-white focus:outline-none focus:ring-2'
+                      'group inline-flex items-center rounded-md text-base font-medium text-gray-500 hover:text-black focus:outline-none focus:ring-2'
                     )}
                   >
-                    <span>More</span>
+                    <span>About Us</span>
                     <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
@@ -267,9 +278,9 @@ export default function MainHeader() {
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
-                            <a
+                            <Link
                               key={item.name}
-                              href={item.href}
+                              to={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
                             >
                               <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
@@ -277,7 +288,7 @@ export default function MainHeader() {
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
                               </div>
-                            </a>
+                            </Link>
                           ))}
                         </div>
                         <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
@@ -303,6 +314,7 @@ export default function MainHeader() {
                       </div>
                     </Popover.Panel>
                   </Transition>
+                  {/* <CheckOutsideClick onClickOutside={handleClose}/> */}
                 </>
               )}
             </Popover>
@@ -313,7 +325,7 @@ export default function MainHeader() {
             </a>
             <a
               href="#"
-              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700"
             >
               Sign up
             </a>
@@ -385,7 +397,7 @@ export default function MainHeader() {
               <div>
                 <a
                   href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
+                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700"
                 >
                   Sign up
                 </a>

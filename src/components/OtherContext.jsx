@@ -15,7 +15,7 @@ export const OtherContent = (props) => {
                   </span>
                 </span>
               </h2>
-              <p className="text-base text-white md:text-lg">
+              <p className="text-base text-black md:text-lg">
                 {props.data}
               </p>
             </div>
@@ -43,7 +43,7 @@ export const OtherContent = (props) => {
               <div className="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
                 <div className="h-full p-5 border border-l-0 rounded-r">
                   <h6 className="mb-2 font-semibold leading-5">
-                    {props.box2Title}
+                    {props.box3Title}
                   </h6>
                   <p className="text-sm text-gray-900">
                     {props.box2Data}

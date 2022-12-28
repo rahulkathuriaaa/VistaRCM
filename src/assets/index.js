@@ -51,7 +51,9 @@ import vistarcm from "./vistarcm.png";
 import checkup from "./checkup.jpg";
 import reception from "./reception.jpg";
 import service from "./service.jpg";
-import physicianbilling from './physicianbilling.jpg'
+import physicianbilling from './physicianbilling.jpg';
+import bloghero from './bloghero.png'
+
 export {
   airbnb,
   bill,
@@ -106,4 +108,5 @@ export {
   theranest,
   vistarcm,
   physicianbilling,
+  bloghero,
 };

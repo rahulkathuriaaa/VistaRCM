@@ -26,7 +26,7 @@ export const features = [
     icon: star,
     title: "Perks",
     content:
-      "Our team comes with 2 decade of experience and  don’t believe in vendor /client philosophy.",
+      "Our team comes with 3 decade of experience and  don’t believe in vendor /client philosophy.",
   },
   {
     id: "feature-2",
@@ -75,12 +75,12 @@ export const stats = [
   {
     id: "stats-1",
     title: "Cost Reduced",
-    value: "20%",
+    value: "40%",
   },
   {
     id: "stats-2",
     title: "Revenue Improved",
-    value: "5%",
+    value: "20%",
   },
   {
     id: "stats-3",
@@ -164,7 +164,7 @@ export const socialMedia = [
   {
     id: "social-media-2",
     icon: facebook,
-    link: "https://www.facebook.com/",
+    link: " https://www.facebook.com/profile.php?id=100089118426054",
   },
   {
     id: "social-media-3",
@@ -174,7 +174,7 @@ export const socialMedia = [
   {
     id: "social-media-4",
     icon: linkedin,
-    link: "https://www.linkedin.com/",
+    link: "https://www.linkedin.com/in/vistarcm-solutions-119a1925b/",
   },
 ];
 

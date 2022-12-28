@@ -14,7 +14,7 @@ export class ChatBot extends Component {
     }
   render() {
     return (
-      <div>ChatBot</div>
+      <div></div>
     )
   }
 }

@@ -22,7 +22,7 @@ const Navbar = () => {
                 <li
                   key={nav.id}
                   className={`font-poppins font-normal cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-dimWhite"
+                    active === nav.title ? "text-black" : "text-dimWhite"
                   } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
                   onClick={() => {
                     setActive(nav.title);
@@ -37,57 +37,57 @@ const Navbar = () => {
                     <div>
                     <ul className="py-1 text-sm" aria-labelledby="dropdownDefault">
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Physician Billing Services
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Medical Billing & Coding
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Medical Billing & Collections
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Fee Schedule Evaluations
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Healthcare Contract Management{" "}
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           A/R Recovery
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Practice Management
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Patient Eligibility Verification
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Revenue Cycle Management{" "}
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Healthcare Denial Management
                         </a>
                       </li>
                       <li>
-                        <a href="#" className="block py-2 px-4 text-white">
+                        <a href="#" className="block py-2 px-4 text-black">
                           Physician Credentialing
                         </a>
                       </li>
@@ -102,7 +102,7 @@ const Navbar = () => {
               <li
                 key={nav.id}
                 className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                  active === nav.title ? "text-white" : "text-dimWhite"
+                  active === nav.title ? "text-black" : "text-dimWhite"
                 } ${index === navLinks.length - 1 ? "mr-0" : "mr-10"}`}
                 onClick={() => setActive(nav.title)}
               >
@@ -137,7 +137,7 @@ const Navbar = () => {
                     <li
                       key={nav.id}
                       className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                        active === nav.title ? "text-white" : "text-dimWhite"
+                        active === nav.title ? "text-black" : "text-dimWhite"
                       } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                       onClick={() => {
                         setActive(nav.title);
@@ -157,57 +157,57 @@ const Navbar = () => {
                           aria-labelledby="dropdownDefault"
                         >
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Physician Billing Services
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Medical Billing & Coding
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Medical Billing & Collections
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Fee Schedule Evaluations
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Healthcare Contract Management{" "}
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               A/R Recovery
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Practice Management{" "}
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Patient Eligibility Verification
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Revenue Cycle Management{" "}
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Healthcare Denial Management{" "}
                             </a>
                           </li>
                           <li>
-                            <a href="#" className="block py-2 px-4 text-white">
+                            <a href="#" className="block py-2 px-4 text-black">
                               Physician Credentialing{" "}
                             </a>
                           </li>
@@ -221,7 +221,7 @@ const Navbar = () => {
                   <li
                     key={nav.id}
                     className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                      active === nav.title ? "text-white" : "text-dimWhite"
+                      active === nav.title ? "text-black" : "text-dimWhite"
                     } ${index === navLinks.length - 1 ? "mb-0" : "mb-4"}`}
                     onClick={() => setActive(nav.title)}
                   >
@@ -244,5 +244,5 @@ const Navbar = () => {
 export default Navbar;
 
 {
-  /* <button id="dropdownDefault" data-dropdown-toggle="dropdown" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg className="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button> */
+  /* <button id="dropdownDefault" data-dropdown-toggle="dropdown" className="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2.5 text-center inline-flex items-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800" type="button">Dropdown button <svg className="ml-2 w-4 h-4" aria-hidden="true" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg></button> */
 }

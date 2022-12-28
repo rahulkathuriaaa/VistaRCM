@@ -32,6 +32,7 @@ const Template = (props) =>{
                box1Data = {props.box1Data}
                box2Title={props.box2Title}
                box2Data={props.box2Data}
+               box3Title = {props.box3Title}
                />
               <Stats/>
               <Clients/>
