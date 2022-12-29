@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
+// import { useState } from 'react'
 import {
   // ArrowPathIcon,
   Bars3Icon,
@@ -22,11 +23,17 @@ import './MainHeader.css';
 
 
 const solutions = [
+  // {
+  //   name: 'Physicians Billing Services',
+  //   description: '',
+  //   href: '/service/physician-billing-services',
+  //   icon: ChartBarIcon,
+  // },
   {
-    name: 'Physicians Billing Services',
-    description: '',
-    href: '/service/physician-billing-services',
-    icon: ChartBarIcon,
+    name: 'Eligibility and Benefit Verification',
+    description: ' ',
+    href: '/service/eligibility-verification',
+    icon: CursorArrowRaysIcon,
   },
   {
     name: 'Medical Coding',
@@ -40,16 +47,22 @@ const solutions = [
     href: '/service/medical-billing-and-collections',
     icon: CursorArrowRaysIcon,
   },
+  // {
+  //   name: 'Fee Schedule Evaluations',
+  //   description: ' ',
+  //   href: '/service/fee-schedule-evaluations',
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: 'Healthcare Contract Management',
+  //   description: ' ',
+  //   href: '/service/healthcare-contract-management',
+  //   icon: CursorArrowRaysIcon,
+  // },
   {
-    name: 'Fee Schedule Evaluations',
+    name: ' Healthcare Denial Management',
     description: ' ',
-    href: '/service/fee-schedule-evaluations',
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: 'Healthcare Contract Management',
-    description: ' ',
-    href: '/service/healthcare-contract-management',
+    href: '/service/healthcare-denial-management',
     icon: CursorArrowRaysIcon,
   },
   {
@@ -58,34 +71,29 @@ const solutions = [
     href: '/service/ar-recovery',
     icon: CursorArrowRaysIcon,
   },
-  {
-    name: 'Practice Management',
-    description: ' ',
-    href: '/service/physician-medical-practice-management',
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: 'Patient Eligibility Verification',
-    description: ' ',
-    href: '/service/eligibility-verification',
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: 'Revenue Cycle Management ',
-    description: ' ',
-    href: '/service/revenue-cycle-management',
-    icon: CursorArrowRaysIcon,
-  },
-  {
-    name: ' Healthcare Denial Management',
-    description: ' ',
-    href: '/service/healthcare-denial-management',
-    icon: CursorArrowRaysIcon,
-  },
+  // {
+  //   name: 'Practice Management',
+  //   description: ' ',
+  //   href: '/service/physician-medical-practice-management',
+  //   icon: CursorArrowRaysIcon,
+  // },
+  // {
+  //   name: 'Patient Eligibility Verification',
+  //   description: ' ',
+  //   href: '/service/eligibility-verification',
+  //   icon: CursorArrowRaysIcon,
+  // },
+ 
   {
     name: 'Physician Credentialing ',
     description: ' ',
     href: '/service/phycisian-credentialing',
+    icon: CursorArrowRaysIcon,
+  },
+  {
+    name: 'Pre-Authorization',
+    description: ' ',
+    href: '/service/revenue-cycle-management',
     icon: CursorArrowRaysIcon,
   },
   // { name: 'Medical Billing And Collections',
@@ -126,7 +134,7 @@ const resources = [
     icon: CalendarIcon,
   },
   { name: 'Contact Us', 
-  href: '#', 
+  href: '/about', 
   icon: ShieldCheckIcon 
 },
 ]
@@ -141,6 +149,7 @@ function classNames(...classes) {
 }
 
 export default function MainHeader() {
+  
   // const [open, setOpen] = useState(false);
 
   // const handleClickOpen = () =>{
@@ -149,6 +158,7 @@ export default function MainHeader() {
   // const handleClose = () =>{
   //   setOpen(false);
   // }
+  // const [show, setShow] = useState(true)
   return (
     <Popover className="relative bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
@@ -174,13 +184,13 @@ export default function MainHeader() {
               Home
             </Link>
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
-            <Popover className="relative">
-              {({ open }) => (
+              <Popover className="relative">
+              {({ open,close }) => (
                 <>
                   <Popover.Button
                     className={classNames(
                       open ? '' : '',
-                      'group inline-flex items-center rounded-md text-base text-gray-500 hover:text-black font-medium hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 lg:h-2'
+                      'group inline-flex items-center rounded-md text-base text-gray-500 hover:text-white font-medium hover:text-white focus:outline-none lg:h-2'
                     )}
                   >
                     <span>Our Services</span>
@@ -202,16 +212,20 @@ export default function MainHeader() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700 overflow-y:scroll">
+                    <Popover.Panel  className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2 scrollbar scrollbar-thumb-blue-700 scrollbar-track-slate-700 overflow-y:scroll">
                       <div className="lg:h-96 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-y:scroll" >
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700" >
                           {solutions.map((item) => (
                             <Link
+                            onClick={()=>{
+                              close();
+                              console.log('click')
+                            }}
                               key={item.name}
                               to={item.href}
-                              className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              className=  "-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50" 
                             >
-                              <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+                              <item.icon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -242,17 +256,17 @@ export default function MainHeader() {
             <Link to="/" className="text-base font-medium text-gray-500 hover:text-black sm:hidden md:flex">
               Home
             </Link> */}
-            <Link to="/about" className="text-base font-medium text-gray-500 hover:text-black">
+            {/* <Link to="/about" className="text-base font-medium text-gray-500 hover:text-black ">
               About Us
-            </Link>
+            </Link> */}
 
             <Popover className="relative">
-              {({ open }) => (
+              {({ open,close }) => (
                 <>
                   <Popover.Button
                     className={classNames(
                       open ? 'text-gray-900' : 'text-gray-500',
-                      'group inline-flex items-center rounded-md text-base font-medium text-gray-500 hover:text-black focus:outline-none focus:ring-2'
+                      'group inline-flex items-center rounded-md text-base font-medium text-gray-500 hover:text-white focus:outline-none'
                     )}
                   >
                     <span>About Us</span>
@@ -282,8 +296,12 @@ export default function MainHeader() {
                               key={item.name}
                               to={item.href}
                               className="-m-3 flex items-start rounded-lg p-3 hover:bg-gray-50"
+                              onClick={()=>{
+                                close();
+                                console.log('click about us')
+                              }}
                             >
-                              <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+                              <item.icon className="h-6 w-6 flex-shrink-0" aria-hidden="true" />
                               <div className="ml-4">
                                 <p className="text-base font-medium text-gray-900">{item.name}</p>
                                 <p className="mt-1 text-sm text-gray-500">{item.description}</p>
@@ -305,7 +323,7 @@ export default function MainHeader() {
                             </ul>
                           </div>
                           <div className="mt-5 text-sm">
-                            <a href="#" className="font-medium text-indigo-600 hover:text-indigo-500">
+                            <a href="#" className="font-medium text-indigo-600">
                               View all posts
                               <span aria-hidden="true"> &rarr;</span>
                             </a>
@@ -403,7 +421,7 @@ export default function MainHeader() {
                 </a>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
-                  <a href="#" className="text-indigo-600 hover:text-indigo-500">
+                  <a href="#" className="text-indigo-600">
                     Sign in
                   </a>
                 </p>

@@ -217,10 +217,21 @@ const App = () => {
           <Route exact path="/service/revenue-cycle-management">
             <Common
               title="VistaRCM Services"
-              text="Revenue Cycle Management Company (RCM)"
-              data="VistaRCM is one of the few healthcare revenue cycle management companies that really ‘walk the talk’! With over 27 years of the experience providing RCM services to hospitals, physicians and physician groups under the same professional management, Our national revenue cycle management company has served and increased the revenue of more than hundreds of providers. The Providers serviced by VistaRCM range from Solo practices, Group practices, IPAs, large Medical Centers, Surgery Centers, Radiology groups, Anesthesiology groups, Pain Management centers etc. VistaRCM has experience and does billing for 25+ specialties in multiple states across the country."
+              text="Pre-Authorization"
+              data={
+                <>
+                <p>
+                As a medical billing professional, dealing with prior authorization is a necessary part of the job. Prior authorization (also known as preauthorization) is the process of getting an agreement from the payer to cover specific services before the service is performed. 
+                </p>
+                <br />
+                <p>
+                Prior authorization is a process required for the providers to determine coverage and obtain approval or authorization from an insurance carrier to pay for a proposed treatment or service. This approval is based on medical necessity, medical appropriateness and benefit limits. For example, if an ordering physician has to obtain pre-authorization from an insurance company for the use of a particular drug, the physician must send a pre-authorization request so that the insurer can determine whether the drug is medically appropriate and safe to use before agreeing to pay. The time required for obtaining a pre-authorization from an insurance company depends upon the requirements of the health plan. Generally, it takes five to thirty days for approval. Our goal is to ensure maximum and speedy reimbursement. For that, we verify the patient’s payment benefits and coverage for specific procedures prior to the appointment.
+                </p>
+                </>
+              }
               headImage={physicianbilling}
-              headTitle="Revenue Cycle Management Company (RCM)           "
+              headTitle=" Pre-Authorization        "
+              show={false}
             />
           </Route>
 
