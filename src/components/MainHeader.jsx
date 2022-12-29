@@ -1,6 +1,6 @@
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
-// import { useState } from 'react'
+import { useState } from 'react'
 import {
   // ArrowPathIcon,
   Bars3Icon,
@@ -150,14 +150,14 @@ function classNames(...classes) {
 
 export default function MainHeader() {
   
-  // const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false);
 
-  // const handleClickOpen = () =>{
-  //   setOpen(true);
-  // }
-  // const handleClose = () =>{
-  //   setOpen(false);
-  // }
+  const handleClickOpen = () =>{
+    setOpen(true);
+  }
+  const handleClose = () =>{
+    setOpen(false);
+  }
   // const [show, setShow] = useState(true)
   return (
     <Popover className="relative bg-black">
@@ -381,9 +381,14 @@ export default function MainHeader() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <Link
+                    <Link aria-hidden="true"
+                    onClick={()=>{
+                      handleClickOpen()
+                      console.log('click mobile')
+                    }}
                       key={item.name}
                       to={item.href}
+                      // className={open?`sr-only` : `-m-3 flex items-center rounded-md p-3 hover:bg-gray-50`}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                     >
                       <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
