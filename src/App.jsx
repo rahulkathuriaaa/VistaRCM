@@ -71,13 +71,13 @@ const App = () => {
               headTitle="Physicians Billing Services"
             />
           </Route>
-          <Route exact path="/service/medical-insurance-billing">
+          <Route exact path="/service/medical-coding">
             <Template
               title="VistaRCM Services"
               text="Medical Coding"
               data="Medical coding is the transformation of healthcare diagnosis, procedures, medical services, and equipmentintouniversalmedical alphanumeric codes. The diagnoses and procedure codes are taken from medical record documentation, such as transcription of physician&#39;s notes, laboratory and radiologic results, etc. Medical coding professionals help ensure the codes are applied correctly during the medical billing process, which includes abstracting the information from documentation,assigning the appropriate codes, and creating a claim to be paid by insurance carriers. A patient&#39;s diagnosis, test results, and treatment must be documented, not only for reimbursement but to guarantee high quality care in future visits. A patient&#39;s personal health information follows them through subsequent complaints and treatments, and they must be easily understood. This is especially important considering the hundreds of millions of visits, procedures, and hospitalizations annually in the United States."
               headImage={physicianbilling}
-              headTitle="Medical Insurance Billing & Coding"
+              headTitle="Medical Coding"
               box1Title="We Cover All Medical Specialties"
               box2Title={
                 <ul>
@@ -210,7 +210,7 @@ const App = () => {
               text="Healthcare Insurance Eligibility Verification           "
               data="Eligibility and benefit verification is vital to ensure accurate and timely receipt of information regarding insurance coverage, and determining the patient's responsibility to pay for healthcare services. To improve cash flow, physicians need to verify eligibility and benefit coverage before claim submission. Our team can provide accurate real-time data on patient benefits before the visit so that you give an estimation to the patient for our of pocket expenses (Copay, Deductible and Coinsurance) before even billing the claim and as well as collect the payments upfront from patients at the time of visit. We provide professional solutions to help you "
               headImage={physicianbilling}
-              headTitle="Healthcare Insurance Eligibility Verification"
+              headTitle="Eligibility and Benefit Verification"
               box1Title={
                 <ul>
                   

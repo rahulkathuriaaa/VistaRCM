@@ -38,7 +38,7 @@ const solutions = [
   {
     name: 'Medical Coding',
     description: '',
-    href: '/service/medical-insurance-billing',
+    href: '/service/medical-coding',
     icon: CursorArrowRaysIcon,
   },
   {
@@ -323,10 +323,10 @@ export default function MainHeader() {
                             </ul>
                           </div>
                           <div className="mt-5 text-sm">
-                            <a href="#" className="font-medium text-indigo-600">
+                            <Link to="/about/blogs" className="font-medium text-indigo-600">
                               View all posts
                               <span aria-hidden="true"> &rarr;</span>
-                            </a>
+                            </Link>
                           </div>
                         </div>
                       </div>

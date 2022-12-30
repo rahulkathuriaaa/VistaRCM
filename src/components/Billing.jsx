@@ -14,13 +14,13 @@ const Billing = () => (
 
     <div className={layout.sectionInfo}>
       <h2 className={styles.heading2}>
-        Easily control your <br className="sm:block hidden" /> billing &
-        invoicing
+      How We Help <br className="sm:block hidden" /> 
       </h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
-        Elit enim sed massa etiam. Mauris eu adipiscing ultrices ametodio
-        aenean neque. Fusce ipsum orci rhoncus aliporttitor integer platea
-        placerat.
+      Enabling end-to-end revenue cycle management optimization.
+      With changing business priorities & evolving challenges, our skilled workforce & rich industry experience help you stay ahead.
+
+
       </p>
 
       

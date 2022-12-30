@@ -33,11 +33,11 @@ const Titlebar = (props) => {
             src={props.headImage}
           />
           <div className="absolute top-[180px] left-[550px] leading-[50px] inline-block">
-            <div className="absolute top-[1.24px] left-[95px] leading-[30px] inline-block">
+            <div className="absolute top-[1.24px] left-[95px] leading-[30px] inline-block text-white">
               Services
             </div>
             <div className="absolute top-[8px] left-[65px] bg-white w-[2px] h-[14px] opacity-[0.6]" />
-            <div className="absolute top-[0px] left-[0px] leading-[30px] text-black text-center inline-block">
+            <div className="absolute top-[0px] left-[0px] leading-[30px] text-white text-center inline-block">
               Home
             </div>
           </div>
