@@ -21,16 +21,15 @@ const About = () => {
         </div>
         <div className="relative flex flex-col items-start w-full max-w-xl px-4 mx-auto md:px-0 lg:px-8 lg:max-w-screen-xl">
           <div className="mb-16 lg:my-40 lg:max-w-lg lg:pr-5">
-            <p className="inline-block px-3 py-px mb-4 text-xs font-semibold tracking-wider text-teal-900 uppercase rounded-full bg-teal-accent-400">
-              VistaRCM
-            </p>
+          <span className="text-gradient">VistaRCM</span>{" "}
+
             <h2 className="mb-5 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
               Everything you
               <br className="hidden md:block" />
-              can imagine
-              <span className="inline-block text-deep-purple-accent-400">
-                is real
-              </span>
+              can imagine is real
+              {/* <span className="inline-block text-deep-purple-accent-400">
+                real
+              </span> */}
             </h2>
             <p className="pr-5 mb-5 text-base text-gray-700 md:text-lg">
             VistaRCM is a healthcare revenue cycle management and medical billing company offering global capabilities & specialized solutions. By using industry-leading technology combined with high-touch relationship building, Our partnership allows healthcare practitioners & 
@@ -59,7 +58,7 @@ facilities to focus on patient care, maintain financial independence, and cultiv
       <section class="bg-white dark:bg-gray-900">
         <div class="container px-6 py-10 mx-auto">
           <h1 class="text-3xl font-semibold text-gray-800 capitalize lg:text-4xl dark:text-white">
-            Our<br />Mission
+            Our Values<br />
           </h1>
 
           <div class="mt-2">
@@ -89,11 +88,10 @@ facilities to focus on patient care, maintain financial independence, and cultiv
                 </span>
 
                 <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                  New Components
-                </h1>
+                Moralistic                </h1>
 
                 <p class="text-gray-500 dark:text-gray-300">
-                	Being a partner and consultant to our providers
+                At VistaRCM, we encourage our employees to be moralistic and give them the freedom to raise their voice against any breach or misuse of power. We train employees to “Do things right and make sure others do it rightly too”.
                 </p>
               </div>
 
@@ -122,12 +120,10 @@ facilities to focus on patient care, maintain financial independence, and cultiv
                 </span>
 
                 <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                  elegant Dark Mode
-                </h1>
+                Enthusiastic                </h1>
 
                 <p class="text-gray-500 dark:text-gray-300">
-                	Being cost effective and globally competitive
-                </p>
+                We work with enthusiasm and zeal, which can be seen in our results. Office culture and atmosphere allows employees to relish their work and keep them in their best spirits. VistaRCM is always enthusiastic to perform and succeed.                </p>
               </div>
 
               <div class="space-y-3">
@@ -149,12 +145,10 @@ facilities to focus on patient care, maintain financial independence, and cultiv
                 </span>
 
                 <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                  Easy to customiztions
-                </h1>
+                Dependable                </h1>
 
                 <p class="text-gray-500 dark:text-gray-300">
-                Being innovative and enhance the process to improve outcomes
-                </p>
+                VistaRCM is a name that you can depend on for all your billing related issues. We allow providers to transfer their overhead to us, and focus on their patients with complete peace of mind.                </p>
               </div>
 
               <div class="space-y-3">
@@ -176,12 +170,10 @@ facilities to focus on patient care, maintain financial independence, and cultiv
                 </span>
 
                 <h1 class="text-2xl font-semibold text-gray-700 capitalize dark:text-white">
-                  Simple & clean designs
-                </h1>
+                Progressive                </h1>
 
                 <p class="text-gray-500 dark:text-gray-300">
-                	Being uncompromising towards quality
-                </p>
+                We believe in doing smart work rather than laborious work. Our primary focus is on improving the performance; ours as well as your practices’. Hence, we do brainstorming on the reports and issues, to lay strategy for progressive working of the practice.                </p>
               </div>
             </div>
 
@@ -195,118 +187,7 @@ facilities to focus on patient care, maintain financial independence, and cultiv
           </div>
         </div>
       </section>
-      <div class="relative">
-        <img
-          src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-          class="absolute inset-0 object-cover w-full h-full"
-          alt=""
-        />
-        <div class="relative bg-opacity-75 bg-deep-purple-accent-700">
-          <svg
-            class="absolute inset-x-0 bottom-0 text-white"
-            viewBox="0 0 1160 163"
-          >
-            <path
-              fill="currentColor"
-              d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z"
-            ></path>
-          </svg>
-          <div class="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
-            <div class="flex flex-col items-center justify-between xl:flex-row">
-              <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-                <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
-                Get In Touch
- <br class="hidden md:block" />
-                </h2>
-                <p class="max-w-xl mb-4 text-base text-gray-200 md:text-lg">
-                  Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                  accusantium doloremque laudan, totam rem aperiam, eaque ipsa
-                  quae.
-                </p>
-                <a
-                  href="/"
-                  aria-label=""
-                  class="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
-                >
-                  Learn more
-                  <svg
-                    class="inline-block w-3 ml-2"
-                    fill="currentColor"
-                    viewBox="0 0 12 12"
-                  >
-                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
-                  </svg>
-                </a>
-              </div>
-              <div class="w-full max-w-xl xl:px-8 xl:w-5/12">
-                <div class="bg-white rounded shadow-2xl p-7 sm:p-10">
-                  <h3 class="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
-                    Sign up for updates
-                  </h3>
-                  <form>
-                    <div class="mb-1 sm:mb-2">
-                      <label
-                        for="firstName"
-                        class="inline-block mb-1 font-medium"
-                      >
-                        First name
-                      </label>
-                      <input
-                        placeholder="John"
-                        required=""
-                        type="text"
-                        class="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                        id="firstName"
-                        name="firstName"
-                      />
-                    </div>
-                    <div class="mb-1 sm:mb-2">
-                      <label
-                        for="lastName"
-                        class="inline-block mb-1 font-medium"
-                      >
-                        Last name
-                      </label>
-                      <input
-                        placeholder="Doe"
-                        required=""
-                        type="text"
-                        class="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                        id="lastName"
-                        name="lastName"
-                      />
-                    </div>
-                    <div class="mb-1 sm:mb-2">
-                      <label for="email" class="inline-block mb-1 font-medium">
-                        E-mail
-                      </label>
-                      <input
-                        placeholder="john.doe@example.org"
-                        required=""
-                        type="text"
-                        class="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-                        id="email"
-                        name="email"
-                      />
-                    </div>
-                    <div class="mt-4 mb-2 sm:mb-4">
-                      <button
-                        type="submit"
-                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
-                      >
-                        Subscribe
-                      </button>
-                    </div>
-                    <p class="text-xs text-gray-600 sm:text-sm">
-                      We respect your privacy. Unsubscribe at any time.
-                    </p>
-                  </form>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+      
         
 <section>
     <div class="container p-4 mx-auto bg-white max-w-7xl sm:p-6 lg:p-8 dark:bg-gray-800">
@@ -372,6 +253,117 @@ We brought the most innovative and thought-advancing leaders in medical billing 
         </div>
     </div>
 </section>
+
+<div class="relative">
+        <img
+          src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
+          class="absolute inset-0 object-cover w-full h-full"
+          alt=""
+        />
+        <div class="relative bg-opacity-75 bg-deep-purple-accent-700">
+          <svg
+            class="absolute inset-x-0 bottom-0 text-white"
+            viewBox="0 0 1160 163"
+          >
+            <path
+              fill="currentColor"
+              d="M-164 13L-104 39.7C-44 66 76 120 196 141C316 162 436 152 556 119.7C676 88 796 34 916 13C1036 -8 1156 2 1216 7.7L1276 13V162.5H1216C1156 162.5 1036 162.5 916 162.5C796 162.5 676 162.5 556 162.5C436 162.5 316 162.5 196 162.5C76 162.5 -44 162.5 -104 162.5H-164V13Z"
+            ></path>
+          </svg>
+          <div class="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+            <div class="flex flex-col items-center justify-between xl:flex-row">
+              <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
+                <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                Get In Touch
+ <br class="hidden md:block" />
+                </h2>
+                <p class="max-w-xl mb-4 text-base text-black md:text-lg">
+                VistaRCM believes in values, and abides to them while ensuring that we offer matchless services to our clients.
+                </p>
+                <a
+                  href="/"
+                  aria-label=""
+                  class="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
+                >
+                  Learn more
+                  <svg
+                    class="inline-block w-3 ml-2"
+                    fill="currentColor"
+                    viewBox="0 0 12 12"
+                  >
+                    <path d="M9.707,5.293l-5-5A1,1,0,0,0,3.293,1.707L7.586,6,3.293,10.293a1,1,0,1,0,1.414,1.414l5-5A1,1,0,0,0,9.707,5.293Z"></path>
+                  </svg>
+                </a>
+              </div>
+              <div class="w-full max-w-xl xl:px-8 xl:w-5/12">
+                <div class="bg-white rounded shadow-2xl p-7 sm:p-10">
+                  <h3 class="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
+                    Get in touch
+                  </h3>
+                  <form>
+                    <div class="mb-1 sm:mb-2">
+                      <label
+                        for="firstName"
+                        class="inline-block mb-1 font-medium"
+                      >
+                        First name
+                      </label>
+                      <input
+                        placeholder="John"
+                        required=""
+                        type="text"
+                        class="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        id="firstName"
+                        name="firstName"
+                      />
+                    </div>
+                    <div class="mb-1 sm:mb-2">
+                      <label
+                        for="lastName"
+                        class="inline-block mb-1 font-medium"
+                      >
+                        Last name
+                      </label>
+                      <input
+                        placeholder="Doe"
+                        required=""
+                        type="text"
+                        class="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        id="lastName"
+                        name="lastName"
+                      />
+                    </div>
+                    <div class="mb-1 sm:mb-2">
+                      <label for="email" class="inline-block mb-1 font-medium">
+                        E-mail
+                      </label>
+                      <input
+                        placeholder="john.doe@example.org"
+                        required=""
+                        type="text"
+                        class="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+                        id="email"
+                        name="email"
+                      />
+                    </div>
+                    <div class="mt-4 mb-2 sm:mb-4">
+                      <button
+                        type="submit"
+                        class="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide text-white bg-blue-400 transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                    {/* <p class="text-xs text-gray-600 sm:text-sm">
+                      We respect your privacy. Unsubscribe at any time.
+                    </p> */}
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div className={`${styles.boxWidth}`}>
         <Footer />

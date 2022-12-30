@@ -11,7 +11,7 @@ const AboutUsPage = () => (
   <br />
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <TitleBar/>
+        <TitleBar headTitle="Contact Us"/>
       </div>
     </div>
     <br />
@@ -28,7 +28,6 @@ const AboutUsPage = () => (
     <br />
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Context title="WHY CHOOSE US" text="Moralistic Enthusiastic Dependable Progressive Honesty Integrity Nurturing Ethical"/>
         <Map/>
         <Testimonials/>
         <Footer/>

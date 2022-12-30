@@ -48,25 +48,25 @@ export const feedback = [
   {
     id: "feedback-1",
     content:
-      "Money is only a tool. It will take you wherever you wish, but it will not replace you as the driver.",
-    name: "Herman Jensen",
-    title: "Founder & Leader",
+      "Hi Team, I would like to really appreciate your services and I will definitely recommend your service to my colleagues. You really helped me with the cash flow on time by working my billing on a short turn around time. ",
+    name: "Dr Blasko- MD",
+    title: "Dr Blasko’s Podiatry",
     img: people01,
   },
   {
     id: "feedback-2",
     content:
-      "Money makes your life easier. If you're lucky to have it, you're lucky.",
-    name: "Steve Mark",
-    title: "Founder & Leader",
+      "I have been with Vista RCM for 2 years now. They were able to get my AR back on track and e finally saw our practice making money and being profitable. Thanks to Vista RCM for working with us and helping us fix the billing issue cause by the previous billers. Highly Recommend.",
+    name: "Dr Joan Ryan",
+    title: "Owner-Ryan Counselling Services",
     img: people02,
   },
   {
     id: "feedback-3",
     content:
-      "It is usually people in the money business, finance, and international trade that are really rich.",
-    name: "Kenn Gallagher",
-    title: "Founder & Leader",
+      "My Podiatry practice, has worked closely with VistaRCM for many months now in an effective partnership that has contributed greatly to the management of our practice. Looking forward to working with you many more years.",
+    name: "Dr Jackie Kordich",
+    title: "MD & Owner-Family Foot Clinic",
     img: people03,
   },
 ];

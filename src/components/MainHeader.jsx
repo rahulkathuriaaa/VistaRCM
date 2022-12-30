@@ -18,7 +18,7 @@ import {
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { vistarcm } from '../assets'
 import { Link } from 'react-router-dom'
-import './MainHeader.css';
+// import './MainHeader.css';
 // import CheckOutsideClick from './CheckOutsideClick'
 
 
@@ -338,15 +338,15 @@ export default function MainHeader() {
             </Popover>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
-              Sign in
-            </a>
-            <a
-              href="#"
+            {/* <Link href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+              Book a free trial
+            </Link> */}
+            <Link
+              to="#"
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700"
             >
-              Sign up
-            </a>
+              Book a free trial
+            </Link>
           </div>
         </div>
       </div>
@@ -418,18 +418,18 @@ export default function MainHeader() {
                 ))}
               </div>
               <div>
-                <a
+                <Link
                   href="#"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700"
                 >
-                  Sign up
-                </a>
-                <p className="mt-6 text-center text-base font-medium text-gray-500">
+                  Book a free trial
+                </Link>
+                {/* <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
                   <a href="#" className="text-indigo-600">
                     Sign in
                   </a>
-                </p>
+                </p> */}
               </div>
             </div>
           </div>

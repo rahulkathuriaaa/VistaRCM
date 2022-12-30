@@ -4,7 +4,7 @@ import styles from "../style";
 import { useState } from "react";
 
 const Common = (props) =>{
-  const [show, setShow] = useState(props.show)
+  const [show, setShow] = useState()
     return(
         <div className="bg-primary w-full overflow-hidden">
         <br />

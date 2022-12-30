@@ -103,7 +103,14 @@ const App = () => {
             <Common
               title="VistaRCM Services"
               text="Medical billing and collection services to maximize your reimbursement rate"
-              data="Typical medical billing services may offer little more than generating your medical claims and statements, but at VistaRCM we utilize specific protocols and expertise to allow for the maximum reimbursement of your medical billing services in the most efficient manner with our comprehensive experience in accounts receivable management. We understand the unique problems of physician practices. It's our business, so you can be assured of a long-term commitment from our expert support team. We take the work and the worry out of your medical billing and collections problems. Acting as an extension of your office staff, VistaRCM provides a flexible array of medical billing services to meet your specific needs."
+              data={<>
+              <br />
+              <br />
+              <br />
+              <p>
+              Typical medical billing services may offer little more than generating your medical claims and statements, but at VistaRCM we utilize specific protocols and expertise to allow for the maximum reimbursement of your medical billing services in the most efficient manner with our comprehensive experience in accounts receivable management. We understand the unique problems of physician practices. It's our business, so you can be assured of a long-term commitment from our expert support team. We take the work and the worry out of your medical billing and collections problems. Acting as an extension of your office staff, VistaRCM provides a flexible array of medical billing services to meet your specific needs.
+              </p>
+              </>}
               headImage={physicianbilling}
               headTitle="Medical Billing And Collections"
             />
@@ -113,7 +120,8 @@ const App = () => {
             <Template
               title="VistaRCM Services"
               text="Fee schedule evaluations and other profit enhancement services"
-              data="Change seems to be the only constant in healthcare today! The forms you are required to complete this month may be obsolete next month. HMO's and PPO's may dramatically affect your practice's earning potential. Does it seem the harder you work, the less you make? VistaRCM can't change healthcare regulations, but we can help steer your practice so you receive every dollar to which you are entitled. Do you review and update your fee schedule annually? As your revenue cycle management partner we review each of our client’s fee schedules by payor. All government, managed care, commercial payors-etc."
+              data={<>
+              <p>Change seems to be the only constant in healthcare today! The forms you are required to complete this month may be obsolete next month. HMO's and PPO's may dramatically affect your practice's earning potential. Does it seem the harder you work, the less you make? VistaRCM can't change healthcare regulations, but we can help steer your practice so you receive every dollar to which you are entitled. Do you review and update your fee schedule annually? As your revenue cycle management partner we review each of our client’s fee schedules by payor. All government, managed care, commercial payors-etc.</p></>}
               box1Title=" Our practice management software "
               box1Data=" Fee schedule reimbursement rates are loaded into our practice management software at the CPT code level to insure you are being paid based on your contracted rates. In addition for each payor the provider participates with VistaRCM identifies"
               box2Title="How do you track the health payors claim"
@@ -205,9 +213,23 @@ const App = () => {
               headTitle="Healthcare Insurance Eligibility Verification"
               box1Title={
                 <ul>
-                  <li>- Reduce denials </li>
-                  <li>- Minimize delayed payments</li>
+                  
+                  
                   <li>- Improve patient care and satisfaction</li>
+               
+                </ul>
+              }
+              box2Title={
+                <ul>
+                  
+                  <li>- Minimize delayed payments</li>
+                  
+               
+                </ul>
+              }
+              box3Title={
+                <ul>
+                  <li>- Avoid Patient follow-up’s on payments</li>
                
                 </ul>
               }
