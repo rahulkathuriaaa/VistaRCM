@@ -8,7 +8,7 @@ const Design = (props) =>{
         <br />
           <div className={`bg-primary ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
-              <Titlebar headImage={props.headImage} headTitle={props.headTitle}/>
+              {/* <Titlebar headImage={props.headImage} headTitle={props.headTitle}/> */}
             </div>
           </div>
           <br />

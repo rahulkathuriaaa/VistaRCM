@@ -16,7 +16,7 @@ import {
   XMarkIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
-import { vistarcm } from '../assets'
+import { vistamobile, vistarcm } from '../assets'
 import { Link } from 'react-router-dom'
 // import './MainHeader.css';
 // import CheckOutsideClick from './CheckOutsideClick'
@@ -30,7 +30,7 @@ const solutions = [
   //   icon: ChartBarIcon,
   // },
   {
-    name: 'Eligibility and Benefit Verification',
+    name: 'Eligibility & Benefit Verification',
     description: ' ',
     href: '/service/eligibility-verification',
     icon: CursorArrowRaysIcon,
@@ -353,21 +353,22 @@ export default function MainHeader() {
 
       <Transition
         as={Fragment}
-        enter="duration-200 ease-out"
-        enterFrom="opacity-0 scale-95"
-        enterTo="opacity-100 scale-100"
+        enter="duration-200 ease-out bg-white"
+        enterFrom="opacity-0 scale-95 bg-white"
+        enterTo="opacity-100 scale-100 bg-white"
         leave="duration-100 ease-in"
         leaveFrom="opacity-100 scale-100"
         leaveTo="opacity-0 scale-95"
+        // className="bg-white relative top-8"
       >
         <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-50">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
                   <img
                     className="h-8 w-auto"
-                    src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                    src={vistamobile}
                     alt="Your Company"
                   />
                 </div>
@@ -381,19 +382,24 @@ export default function MainHeader() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <Link aria-hidden="true"
-                    onClick={()=>{
-                      handleClickOpen()
-                      console.log('click mobile')
-                    }}
+                    <Popover.Button>
+                      <div>
+
+                    <a
+                    // onClick={()=>{
+                    //   handleClickOpen()
+                    //   console.log('click mobile')
+                    // }}
                       key={item.name}
-                      to={item.href}
+                      href={item.href}
                       // className={open?`sr-only` : `-m-3 flex items-center rounded-md p-3 hover:bg-gray-50`}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
                     >
                       <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
                       <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                    </Link>
+                    </a>
+                      </div>
+                    </Popover.Button>
                   ))}
                 </nav>
               </div>
@@ -408,13 +414,16 @@ export default function MainHeader() {
                   Docs
                 </a> */}
                 {resources.map((item) => (
-                  <Link
+                  <Popover.Button>
+
+                  <a
                     key={item.name}
-                    to={item.href}
+                    href={item.href}
                     className="text-base font-medium text-gray-900 hover:text-gray-700"
                   >
                     {item.name}
-                  </Link>
+                  </a>
+                  </Popover.Button>
                 ))}
               </div>
               <div>
