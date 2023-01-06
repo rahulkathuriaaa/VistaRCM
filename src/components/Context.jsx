@@ -13,7 +13,7 @@ const Context = (props) => {
           
           <div className="absolute top-[0px] left-[0px] w-[270px] h-[670px]">
             <img
-              className="absolute top-[0px] left-[0px] rounded-[15px] w-[270px] h-[320px] object-cover"
+              className="absolute top-[0px] left-[0px] rounded-[15px] w-[270px] h-[320px] object-cover "
               alt=""
               src={reception}
             />
@@ -42,7 +42,7 @@ const Context = (props) => {
           {/* <div className="absolute top-[391px] left-[33px] text-lg leading-[150%] capitalize font-medium font-poppins text-gray-500 inline-block">
             Get Started
           </div> */}
-          <div className="absolute top-[12px] left-[0px] text-xl leading-[130%] uppercase font-poppins [background:radial-gradient(50%_50%_at_50%_50%,_#def9fa_0.89%,_#bef3f5_17.23%,_#9dedf0_42.04%,_#7de7eb_55.12%,_#5ce1e6_71.54%,_#33bbcf)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] inline-block w-[351px] h-[27px]">
+          <div className="relative md:absolute top-[12px] left-[0px] text-xl leading-[130%] uppercase font-poppins [background:radial-gradient(50%_50%_at_50%_50%,_#def9fa_0.89%,_#bef3f5_17.23%,_#9dedf0_42.04%,_#7de7eb_55.12%,_#5ce1e6_71.54%,_#33bbcf)] [-webkit-background-clip:text] [-webkit-text-fill-color:transparent] inline-block w-[351px] h-[27px]">
             {props.title}
           </div>
         </div>

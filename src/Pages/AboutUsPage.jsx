@@ -5,15 +5,17 @@ import styles from "../style";
 // import Map from "./components/Map";
 import TitleBar from "../components/TitleBar"
 import { Context, Footer, Map, Testimonials } from "../components";
+import { physicianbilling } from "../assets";
 
 const AboutUsPage = () => (
   <div className="bg-primary w-full overflow-hidden">
-  <br />
+  
     <div className={`bg-primary ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
-        <TitleBar headTitle="Contact Us"/>
+        <TitleBar headTitle="Contact Us" headImage={physicianbilling}/>
       </div>
     </div>
+    {/* <br />
     <br />
     <br />
     <br />
@@ -22,8 +24,7 @@ const AboutUsPage = () => (
     <br />
     <br />
     <br />
-    <br />
-    <br />
+    <br /> */}
     <br />
     <br />
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>

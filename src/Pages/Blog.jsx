@@ -39,14 +39,10 @@ const Blog = () => {
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                  In usu laoreet repudiare legendos
-                </h3>
+                In-house Medical Billing vs. Outsourced RCM                </h3>
                 <span className="text-xs text-gray-400">January 21, 2021</span>
                 <p>
-                  Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-                  neglegentur, ex has tantas percipit perfecto. At per tempor
-                  albucius perfecto, ei probatus consulatu patrioque mea, ei
-                  vocent delicata indoctum pri.
+                As you expand your medical practice, at some point, you are bound to be befuddled by the task of choosing to either continue with the in-house medical billing process or outsource it to the experts. 
                 </p>
               </div>
             </a>
@@ -62,14 +58,10 @@ const Blog = () => {
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                  In usu laoreet repudiare legendos
-                </h3>
+                Role of medical billing software in RCM services                </h3>
                 <span className="text-xs text-gray-400">January 22, 2021</span>
                 <p>
-                  Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-                  neglegentur, ex has tantas percipit perfecto. At per tempor
-                  albucius perfecto, ei probatus consulatu patrioque mea, ei
-                  vocent delicata indoctum pri.
+                Ensuring efficient revenue cycle management (RCM) along with excellent patient care is no easy task. If you are looking for a way to balance these functions at your healthcare establishment, then consider getting medical billing software for the revenue cycle management of your business. 
                 </p>
               </div>
             </a>
@@ -85,14 +77,10 @@ const Blog = () => {
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                  In usu laoreet repudiare legendos
-                </h3>
+                10 Ways to Improve Your Billing Process                </h3>
                 <span className="text-xs text-gray-400">January 23, 2021</span>
                 <p>
-                  Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-                  neglegentur, ex has tantas percipit perfecto. At per tempor
-                  albucius perfecto, ei probatus consulatu patrioque mea, ei
-                  vocent delicata indoctum pri.
+                The success of your medical practice largely depends on an efficient billing process. But challenges such as complex processes, delinquent claims and denied claims can obstruct your business’s cash flow. However, do not lose heart in the face of such challenges as there are many ways to overcome them and improve your revenue cycle.
                 </p>
               </div>
             </a>
@@ -108,14 +96,10 @@ const Blog = () => {
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
-                  In usu laoreet repudiare legendos
-                </h3>
+                5 Common Reasons for Claim Denials                </h3>
                 <span className="text-xs text-gray-400">January 24, 2021</span>
                 <p>
-                  Mei ex aliquid eleifend forensibus, quo ad dicta apeirian
-                  neglegentur, ex has tantas percipit perfecto. At per tempor
-                  albucius perfecto, ei probatus consulatu patrioque mea, ei
-                  vocent delicata indoctum pri.
+                When a patient's insurance claim is denied, not only can your cash flow be affected, the relationship with your patient can be damaged as well. Some claim denials can be successfully appealed, but even when appeals succeed, they can temporarily leave claim status up in the air - something both your practice and your patient would like to avoid.
                 </p>
               </div>
             </a>

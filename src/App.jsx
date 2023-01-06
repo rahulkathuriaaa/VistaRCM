@@ -15,6 +15,7 @@ import Blog from "./Pages/Blog";
 import TestimonialsPage from "./Pages/TestimonialsPage";
 import About from "./Pages/About";
 import Careers from "./Pages/Careers";
+import MainService from "./Pages/MainService";
 
 // const App = () => (
 //   <div className="bg-primary w-full overflow-hidden">
@@ -206,30 +207,49 @@ const App = () => {
 
           <Route exact path="/service/eligibility-verification">
             <Template
-              title="VistaRCM Services"
-              text="Healthcare Insurance Eligibility Verification           "
+              // title="VistaRCM Services"
+              text="Eligibility and Benefit Verification"
               data="Eligibility and benefit verification is vital to ensure accurate and timely receipt of information regarding insurance coverage, and determining the patient's responsibility to pay for healthcare services. To improve cash flow, physicians need to verify eligibility and benefit coverage before claim submission. Our team can provide accurate real-time data on patient benefits before the visit so that you give an estimation to the patient for our of pocket expenses (Copay, Deductible and Coinsurance) before even billing the claim and as well as collect the payments upfront from patients at the time of visit. We provide professional solutions to help you "
               headImage={physicianbilling}
               headTitle="Eligibility and Benefit Verification"
+              // Image={Eligibility}
               box1Title={
                 <ul>
                   
                   
-                  <li>- Improve patient care and satisfaction</li>
+                  <li>Improve patient care and satisfaction</li>
                
                 </ul>
               }
               box2Title={
                 <ul>
                   
-                  <li>- Minimize delayed payments</li>
+                  <li>Minimize delayed payments</li>
                   
                
                 </ul>
               }
               box3Title={
                 <ul>
-                  <li>- Avoid Patient follow-up’s on payments</li>
+                  <li>Avoid Patient follow-up’s on payments</li>
+               
+                </ul>
+              }
+              box4Title={
+                <ul>
+                  <li>Reduce denials</li>
+               
+                </ul>
+              }
+              box5Title={
+                <ul>
+                  <li>Collect payments upfront at the time of visit</li>
+               
+                </ul>
+              }
+              box6Title={
+                <ul>
+                  <li>Enhance workflow</li>
                
                 </ul>
               }
@@ -280,7 +300,7 @@ const App = () => {
           <Route exact path="/service/phycisian-credentialing">
             <Design
               title="VistaRCM Services"
-              text="Physician Credentialing"
+              text="Providers Credentialing"
               heading="Physician/Provider Credentialing Services"
               head1="When is Provider Credentialing necessary?"
               data1={
@@ -354,6 +374,13 @@ const App = () => {
 
           <Route exact path="/about/careers">
             <Careers />
+          </Route>
+
+          <Route exact path="/service/billing-Denial Management-A/R">
+            <MainService 
+            headTitle="Billing, Denial Management and A/R Follow Up"
+            headImage={physicianbilling}
+            />
           </Route>
         </Switch>
       </main>

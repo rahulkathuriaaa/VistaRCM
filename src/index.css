@@ -141,3 +141,8 @@
   background: rgba(255, 255, 255, 0.6);
   filter: blur(750px);
 }
+@media (min-width: 992px) {
+  #cta-img-nml-50 {
+    margin-left: 50px;
+  }
+}

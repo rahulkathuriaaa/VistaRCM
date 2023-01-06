@@ -53,8 +53,8 @@ import reception from "./reception.jpg";
 import service from "./service.jpg";
 import physicianbilling from './physicianbilling.jpg';
 import bloghero from './bloghero.png';
-import vistamobile from './vistamobile.png';
-
+import vistamobile from './vistamobile.jpg';
+import Eligibilty from './Eligibilty.png';
 export {
   airbnb,
   bill,
@@ -111,4 +111,5 @@ export {
   physicianbilling,
   bloghero,
   vistamobile,
+  Eligibilty,
 };

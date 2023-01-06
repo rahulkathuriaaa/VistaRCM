@@ -1,3 +1,5 @@
+import {  Eligibilty } from "../assets";
+
 export const OtherContent = (props) => {
     return (
       <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20 ">
@@ -19,10 +21,10 @@ export const OtherContent = (props) => {
                 {props.data}
               </p>
             </div>
-            <div className="grid gap-5 row-gap-8 sm:grid-cols-3">
-              <div className="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
-                <div className="h-full p-5 border border-l-0 rounded-r">
-                  <h6 className="mb-2 font-semibold leading-5">
+            <div className="grid gap-5 row-gap-8 sm:grid-cols-1">
+              <div className="bg-boxColor border-l-4 shadow-sm border-deep-purple-accent-400">
+                <div className="h-full p-5 border border-l-0 rounded-r ">
+                  <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box1Title}
                   </h6>
                   <p className="text-sm text-gray-900">
@@ -30,9 +32,9 @@ export const OtherContent = (props) => {
                   </p>
                 </div>
               </div>
-              <div className="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
+              <div className="bg-boxColor2 border-l-4 shadow-sm border-deep-purple-accent-400">
                 <div className="h-full p-5 border border-l-0 rounded-r">
-                  <h6 className="mb-2 font-semibold leading-5">
+                  <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box2Title}
                   </h6>
                   <p className="text-sm text-gray-900">
@@ -40,9 +42,9 @@ export const OtherContent = (props) => {
                   </p>
                 </div>
               </div>
-              <div className="bg-white border-l-4 shadow-sm border-deep-purple-accent-400">
+              <div className="bg-boxColor border-l-4 shadow-sm border-deep-purple-accent-400">
                 <div className="h-full p-5 border border-l-0 rounded-r">
-                  <h6 className="mb-2 font-semibold leading-5">
+                  <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box3Title}
                   </h6>
                   <p className="text-sm text-gray-900">
@@ -50,12 +52,45 @@ export const OtherContent = (props) => {
                   </p>
                 </div>
               </div>
+              <div className="bg-boxColor2 border-l-4 shadow-sm border-deep-purple-accent-400">
+                <div className="h-full p-5 border border-l-0 rounded-r">
+                  <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
+                    {props.box4Title}
+                  </h6>
+                  <p className="text-sm text-gray-900">
+                    {props.box4Data}
+                  </p>
+                </div>
+              </div>
+              <div className="bg-boxColor border-l-4 shadow-sm border-deep-purple-accent-400">
+
+                <div className="h-full p-5 border border-l-0 rounded-r">
+                  <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
+                    {props.box5Title}
+                  </h6>
+                  <p className="text-sm text-gray-900">
+                    {props.box4Data}
+                  </p>
+                </div>
+              </div>
+              <div className="bg-boxColor2 border-l-4 shadow-sm border-deep-purple-accent-400">
+                <div className="h-full p-5 border border-l-0 rounded-r">
+                  <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
+                    {props.box6Title}
+                  </h6>
+                  <p className="text-sm text-gray-900">
+                    {props.box4Data}
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <div>
+            <br />
+            <br />
             <img
-              className="object-cover w-full h-56 rounded shadow-lg sm:h-96"
-              src="https://images.pexels.com/photos/927022/pexels-photo-927022.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=3&amp;h=750&amp;w=1260"
+              className="object-cover w-full h-90 rounded shadow-lg sm:h-90"
+              src={Eligibilty}
               alt=""
             />
           </div>

@@ -1,4 +1,4 @@
-import { Context, CTA, Footer, Titlebar } from "../components";
+import { Clients, Context, CTA, Footer, Titlebar } from "../components";
 import Type3 from "../components/Type3";
 import styles from "../style";
 import { useState } from "react";
@@ -7,12 +7,12 @@ const Common = (props) =>{
   const [show, setShow] = useState()
     return(
         <div className="bg-primary w-full overflow-hidden">
-        <br />
           <div className={`bg-primary ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
-              {/* <Titlebar headImage={props.headImage} headTitle={props.headTitle}/> */}
+              <Titlebar headImage={props.headImage} headTitle={props.headTitle}/>
             </div>
           </div>
+          {/* <br />
           <br />
           <br />
           <br />
@@ -21,8 +21,7 @@ const Common = (props) =>{
           <br />
           <br />
           <br />
-          <br />
-          <br />
+          <br /> */}
           <br />
           <br />
           <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
@@ -35,7 +34,9 @@ const Common = (props) =>{
               <br />
               
 
+              <Clients/>
               <CTA/>
+
               <Footer/>
             </div>
           </div>

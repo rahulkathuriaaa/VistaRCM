@@ -2,22 +2,22 @@ import { Footer } from "../components";
 
 const TestimonialsPage = () => {
   return (
-    <div className="-z-100">
+    <div >
       <section className="my-8 bg-white text-gray-100 ">
         <div className="container flex flex-col items-center mx-auto mb-12 md:p-10 md:px-12">
           <h1 className="p-4 text-4xl font-bold leading-none text-center text-black">
             What our customers are saying about us
           </h1>
         </div>
-        <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10">
+        <div className="container flex flex-col items-center justify-center mx-auto lg:flex-row lg:flex-wrap lg:justify-evenly lg:px-10 -z-10">
           <div className="flex flex-col max-w-sm mx-4 my-6 shadow-lg">
-            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-gray-900">
-              <p className="relative px-6 py-1 text-lg italic text-center text-gray-100">
+            <div className="px-4 py-12 rounded-t-lg sm:px-8 md:px-12 bg-gray-900 ">
+              <p className="relative px-6 py-1 text-lg italic text-center text-gray-100 ">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
                   fill="currentColor"
-                  className="w-8 h-8 text-violet-400"
+                  className="w-8 h-8 text-violet-400 -z-100"
                 >
                   <path d="M232,246.857V16H16V416H54.4ZM48,48H200V233.143L48,377.905Z"></path>
                   <path d="M280,416h38.4L496,246.857V16H280ZM312,48H464V233.143L312,377.905Z"></path>

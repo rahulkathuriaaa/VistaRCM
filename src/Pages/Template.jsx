@@ -23,6 +23,10 @@ const Template = (props) =>{
                box2Title={props.box2Title}
                box2Data={props.box2Data}
                box3Title = {props.box3Title}
+               box4Title = {props.box4Title}
+               box5Title = {props.box5Title}
+               box6Title = {props.box6Title}
+               Image={props.Image}
                />
               <Stats/>
               <Clients/>

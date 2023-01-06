@@ -5,24 +5,22 @@ import styles from "../style";
 const Design = (props) =>{
     return(
         <div className="bg-primary w-full overflow-hidden">
-        <br />
           <div className={`bg-primary ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
-              {/* <Titlebar headImage={props.headImage} headTitle={props.headTitle}/> */}
+              <Titlebar headImage={props.headImage} headTitle={props.headTitle}/>
             </div>
           </div>
+          {/* <br />
           <br />
           <br />
           <br />
           <br />
           <br />
+          <br /> */}
+          {/* <br />
           <br />
           <br />
-          <br />
-          <br />
-          <br />
-          <br />
-          <br />
+          <br /> */}
           <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
               <Type3
