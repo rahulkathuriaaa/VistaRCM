@@ -1,4 +1,4 @@
-import {  Eligibilty } from "../assets";
+// import {  Eligibilty } from "../assets";
 
 export const OtherContent = (props) => {
     return (
@@ -90,7 +90,7 @@ export const OtherContent = (props) => {
             <br />
             <img
               className="object-cover w-full h-90 rounded shadow-lg sm:h-90"
-              src={Eligibilty}
+              src={props.hero}
               alt=""
             />
           </div>

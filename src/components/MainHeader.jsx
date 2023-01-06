@@ -133,10 +133,10 @@ const resources = [
     href: '/about/careers',
     icon: CalendarIcon,
   },
-  { name: 'Contact Us', 
-  href: '/about', 
-  icon: ShieldCheckIcon 
-},
+//   { name: 'Contact Us', 
+//   href: '/about', 
+//   icon: ShieldCheckIcon 
+// },
 ]
 const recentPosts = [
   { id: 1, name: 'Solutions for the Revenue Cycle and clinical labor shortage', href: '/about/blogs' },
@@ -252,10 +252,13 @@ export default function MainHeader() {
                 </>
               )}
             </Popover>
-{/* 
-            <Link to="/" className="text-base font-medium text-gray-500 hover:text-black sm:hidden md:flex">
-              Home
-            </Link> */}
+
+            <Link to="/about/blogs" className="text-base font-medium text-gray-500 hover:text-white sm:hidden md:flex">
+              Blogs
+            </Link>
+            <Link to="/about" className="text-base font-medium text-gray-500 hover:text-white sm:hidden md:flex">
+              Contact
+            </Link>
             {/* <Link to="/about" className="text-base font-medium text-gray-500 hover:text-black ">
               About Us
             </Link> */}
@@ -323,7 +326,11 @@ export default function MainHeader() {
                             </ul>
                           </div>
                           <div className="mt-5 text-sm">
-                            <Link to="/about/blogs" className="font-medium text-indigo-600">
+                            <Link to="/about/blogs" className="font-medium text-indigo-600"
+                            onClick={()=>{
+                              close();
+                              console.log('click about us')
+                            }}>
                               View all posts
                               <span aria-hidden="true"> &rarr;</span>
                             </Link>
@@ -337,6 +344,7 @@ export default function MainHeader() {
               )}
             </Popover>
           </Popover.Group>
+          
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
             {/* <Link href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
               Book a free trial

@@ -47,7 +47,7 @@ import sunwave from "./sunwave.png";
 import waystar from "./waystar.png";
 import zoll from "./zoll.png";
 import theranest from "./theranest.png";
-import vistarcm from "./vistarcm.png";
+import vistarcm from "./vistarcm.svg";
 import checkup from "./checkup.jpg";
 import reception from "./reception.jpg";
 import service from "./service.jpg";
@@ -55,6 +55,13 @@ import physicianbilling from './physicianbilling.jpg';
 import bloghero from './bloghero.png';
 import vistamobile from './vistamobile.jpg';
 import Eligibilty from './Eligibilty.png';
+import chargeposting from './chargeposting.jpg';
+import postpayment from './postpayment.jpeg';
+import denialmanagement from './denialmanagement.jpg';
+import ar from './ar.jpeg';
+import medicalcoding from './medicalcoding.jpg';
+import getintouch from './getintouch.jpg';
+import careers from './careers.jpg';
 export {
   airbnb,
   bill,
@@ -112,4 +119,11 @@ export {
   bloghero,
   vistamobile,
   Eligibilty,
+  chargeposting,
+  postpayment,
+  denialmanagement,
+  ar,
+  medicalcoding,
+  getintouch,
+  careers,
 };

@@ -1,3 +1,4 @@
+import { getintouch } from "../assets";
 import { Footer } from "../components";
 import styles from "../style";
 const About = () => {
@@ -38,12 +39,12 @@ facilities to focus on patient care, maintain financial independence, and cultiv
 
             </p>
             <div className="flex items-center">
-              <a
+              {/* <a
                 href="/"
                 className="inline-flex items-center justify-center h-12 px-6 mr-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none"
               >
                 Get started
-              </a>
+              </a> */}
               <a
                 href="/"
                 aria-label=""
@@ -201,9 +202,9 @@ facilities to focus on patient care, maintain financial independence, and cultiv
 We brought the most innovative and thought-advancing leaders in medical billing and revenue cycle management together to progress this industry into the modern, technological age. We seek a level of professionalism and analysis you won’t find elsewhere.
                     </p>
                     <div class="w-full md:w-1/3">
-                        <button type="button" class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
+                        {/* <button  type="button" class="py-2 px-4  bg-indigo-600 hover:bg-indigo-700 focus:ring-indigo-500 focus:ring-offset-indigo-200 text-white w-full transition ease-in duration-200 text-center text-base font-semibold shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2  rounded-lg ">
                             See more
-                        </button>
+                        </button> */}
                     </div>
                 </div>
             </div>
@@ -256,8 +257,8 @@ We brought the most innovative and thought-advancing leaders in medical billing 
 
 <div class="relative">
         <img
-          src="https://images.pexels.com/photos/3228766/pexels-photo-3228766.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260"
-          class="absolute inset-0 object-cover w-full h-full"
+      src={getintouch}
+          class="absolute inset-0 object-cover w-full h-full opacity-60"
           alt=""
         />
         <div class="relative bg-opacity-75 bg-deep-purple-accent-700">
@@ -273,7 +274,7 @@ We brought the most innovative and thought-advancing leaders in medical billing 
           <div class="relative px-4 py-16 mx-auto overflow-hidden sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
             <div class="flex flex-col items-center justify-between xl:flex-row">
               <div class="w-full max-w-xl mb-12 xl:mb-0 xl:pr-16 xl:w-7/12">
-                <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-white sm:text-4xl sm:leading-none">
+                <h2 class="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-black sm:text-4xl sm:leading-none ">
                 Get In Touch
  <br class="hidden md:block" />
                 </h2>
@@ -283,7 +284,7 @@ We brought the most innovative and thought-advancing leaders in medical billing 
                 <a
                   href="/"
                   aria-label=""
-                  class="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700"
+                  class="inline-flex items-center font-semibold tracking-wider transition-colors duration-200 text-teal-accent-400 hover:text-teal-accent-700 text-black text-center "
                 >
                   Learn more
                   <svg

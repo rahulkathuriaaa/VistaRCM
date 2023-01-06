@@ -1,7 +1,8 @@
 import { OtherContext, CTA, Footer, Titlebar, Stats, Clients } from "../components";
+import Context3 from "../components/Context3";
 import styles from "../style";
 
-const Template = (props) =>{
+const TemplateCopy = (props) =>{
     return(
         <div className="bg-primary w-full overflow-hidden z-[5]">
         {/* <br /> */}
@@ -14,7 +15,7 @@ const Template = (props) =>{
           {/* <br /> */}
           <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
-              <OtherContext
+              <Context3
                title={props.title} 
                hero={props.hero}
                text={props.text} 
@@ -23,7 +24,7 @@ const Template = (props) =>{
                box1Data = {props.box1Data}
                box2Title={props.box2Title}
                box2Data={props.box2Data}
-               box3Title = {props.box3Title}
+              //  box3Title = {props.box3Title}
                box4Title = {props.box4Title}
                box5Title = {props.box5Title}
                box6Title = {props.box6Title}
@@ -40,4 +41,4 @@ const Template = (props) =>{
       
     
 }
-export default Template;
+export default TemplateCopy;

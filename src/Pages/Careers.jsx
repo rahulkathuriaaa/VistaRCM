@@ -1,7 +1,13 @@
+import { careers } from "../assets";
+import { Footer } from "../components";
+import styles from "../style";
+
 const Careers = () => {
     return(
-        <div className="relative -z-10">
-  <img src="https://images.pexels.com/photos/3747463/pexels-photo-3747463.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=750&amp;w=1260" className="absolute inset-0 object-cover w-full h-full" alt="" />
+      <div>
+
+        <div className="relative ">
+  <img src={careers} className="absolute inset-0 object-cover w-full h-full" alt="" />
   <div className="relative bg-gray-900 bg-opacity-75">
     <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
       <div className="flex flex-col items-center justify-between xl:flex-row">
@@ -65,7 +71,7 @@ const Careers = () => {
                   type="submit"
                   className="inline-flex items-center justify-center w-full h-12 px-6 font-medium tracking-wide transition duration-200 rounded shadow-md bg-deep-purple-accent-400 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none bg-black text-white"
                 >
-                  Subscribe
+                  Submit
                 </button>
               </div>
               <p className="text-xs text-gray-600 sm:text-sm">
@@ -78,6 +84,13 @@ const Careers = () => {
     </div>
   </div>
 </div>
+<div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Footer/>
+      </div>
+    </div>
+      </div>
+
 
     )
 }

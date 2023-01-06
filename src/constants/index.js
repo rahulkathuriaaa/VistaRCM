@@ -94,19 +94,19 @@ export const footerLinks = [
     title: "Useful Links",
     links: [
       {
-        name: "Content",
+        name: "Eligibility and Benefit Verification",
         link: "https://www.hoobank.com/content/",
       },
       {
-        name: "How it Works",
+        name: "Medical Coding",
         link: "https://www.hoobank.com/how-it-works/",
       },
       {
-        name: "Create",
+        name: "Credentialing",
         link: "https://www.hoobank.com/create/",
       },
       {
-        name: "Explore",
+        name: "Pre-Authorization",
         link: "https://www.hoobank.com/explore/",
       },
       {
@@ -119,15 +119,15 @@ export const footerLinks = [
     title: "Community",
     links: [
       {
-        name: "Help Center",
+        name: "About VistaRCM",
         link: "https://www.hoobank.com/help-center/",
       },
       {
-        name: "Partners",
+        name: "Contact Us",
         link: "https://www.hoobank.com/partners/",
       },
       {
-        name: "Suggestions",
+        name: "Careers",
         link: "https://www.hoobank.com/suggestions/",
       },
       {
@@ -135,20 +135,20 @@ export const footerLinks = [
         link: "https://www.hoobank.com/blog/",
       },
       {
-        name: "Newsletters",
+        name: "Testimonials",
         link: "https://www.hoobank.com/newsletters/",
       },
     ],
   },
   {
-    title: "Partner",
+    title: "Get in touch",
     links: [
       {
-        name: "Our Partner",
+        name: "Book a free trial",
         link: "https://www.hoobank.com/our-partner/",
       },
       {
-        name: "Become a Partner",
+        name: "Contact",
         link: "https://www.hoobank.com/become-a-partner/",
       },
     ],

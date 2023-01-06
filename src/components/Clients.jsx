@@ -1,9 +1,28 @@
-import { airbnb, binance, dropbox, advancedmd, alleva, collectly, InboxHealth, modmed, medicusit, zoll, imagetrend, elico, drchrono, GreenWay, Kipu, waystar, eclinicalworks, cerner, experity, meditech, cpsi, medstreaming, HST, bestnotes, sunwave, theranest } from "../assets";
+import { airbnb, binance, dropbox, advancedmd, alleva, collectly, InboxHealth, modmed, medicusit, imagetrend, elico, drchrono, GreenWay, Kipu, waystar, eclinicalworks, cerner, experity, meditech, cpsi, medstreaming, HST, bestnotes, sunwave, theranest } from "../assets";
 import styles from "../style";
 import './Client.css';
 const Clients = () => (
+   
   <section className={`${styles.flexCenter} my-4`}>
+    
     <div className={`${styles.flexCenter} flex-wrap w-full`}>
+        <div>
+
+        <h1 className="text-6xl font-bold text-center">Technology Platforms</h1>
+        <br />
+        <p className="text-center text-xl">We can work with any in-house software you use</p>
+        </div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        
+ 
     <div className="slider">
     <div className="slide-track">
         {/* <!-- 9 SLIDES --> */}
@@ -34,9 +53,9 @@ const Clients = () => (
         <div className="slide">
             <img src={medicusit}/>
         </div>
-        <div className="slide">
+        {/* <div className="slide">
             <img src={zoll}/>
-        </div>
+        </div> */}
         <div className="slide">
             <img src={imagetrend}/>
         </div>
