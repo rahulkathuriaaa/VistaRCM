@@ -351,12 +351,12 @@ export default function MainHeader() {
             {/* <Link href="#" className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
               Book a free trial
             </Link> */}
-            <Link
-              to="#"
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSdPPPSfMK7sKrTi2pAyr-zUbNLAIk1wvHeZJusZYNiWOKRbBA/viewform"
               className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700"
             >
               Book a free trial
-            </Link>
+            </a>
           </div>
         </div>
       </div>
