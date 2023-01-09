@@ -6,7 +6,7 @@ const CTA = () => (
     <div className="flex-1 flex flex-col">
       <h2 className={`${styles.heading2} text-white`}>Let’s try our service now!</h2>
       <p className={`${styles.paragraph} text-white max-w-[470px] mt-5`}>
-      For more information on this service and how it can benefit your practice call toll free at 877-896-6474  or email support@vistarcmsolutions.com.
+      For more information on this service and how it can benefit your practice email us at support@vistarcmsolutions.com 
 
 </p>
     </div>

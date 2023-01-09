@@ -304,7 +304,7 @@ const App = () => {
             <Design
               // title="VistaRCM Services"
               // text="Providers Credentialing"
-              heading="Physician/Provider Credentialing Services"
+              heading="Provider Credentialing Services"
               head1="When is Provider Credentialing necessary?"
               data1={
                 <ul>
@@ -359,7 +359,7 @@ const App = () => {
               //  box2Title= "How do you track the health payors claim"
               //  box2Data= " Are you being kept in the know when your payors reduce your reimbursement rates? Together, we can increase your revenue and maximize your profit."
               headImage={physicianbilling}
-              headTitle="Physician/Provider Credentialing Services"
+              headTitle="Provider Credentialing Services"
             />
           </Route>
 

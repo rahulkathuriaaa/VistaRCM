@@ -6,7 +6,7 @@ export const OtherContent = (props) => {
         <div className="grid gap-5 row-gap-8 lg:grid-cols-2">
           <div className="flex flex-col justify-center">
             <div className="max-w-xl mb-6">
-              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">
+              <h2 className="max-w-lg mb-6 font-sans text-3xl font-bold tracking-tight text-black sm:text-4xl sm:leading-none">
                 {props.title}
                 <br className="hidden md:block" />
                 
@@ -17,7 +17,7 @@ export const OtherContent = (props) => {
                   </span>
                 </span>
               </h2>
-              <p className="text-base text-black md:text-lg">
+              <p className="text-base text-left text-gray-500 md:text-lg">
                 {props.data}
               </p>
             </div>
@@ -27,7 +27,7 @@ export const OtherContent = (props) => {
                   <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box1Title}
                   </h6>
-                  <p className="text-sm text-gray-900">
+                  <p className="text-sm text-gray-500">
                     {props.box1Data}
                   </p>
                 </div>
@@ -37,7 +37,7 @@ export const OtherContent = (props) => {
                   <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box2Title}
                   </h6>
-                  <p className="text-sm text-gray-900">
+                  <p className="text-sm text-gray-500">
                     {props.box2Data}
                   </p>
                 </div>
@@ -47,7 +47,7 @@ export const OtherContent = (props) => {
                   <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box3Title}
                   </h6>
-                  <p className="text-sm text-gray-900">
+                  <p className="text-sm text-gray-500">
                     {props.box2Data}
                   </p>
                 </div>
@@ -57,7 +57,7 @@ export const OtherContent = (props) => {
                   <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box4Title}
                   </h6>
-                  <p className="text-sm text-gray-900">
+                  <p className="text-sm text-gray-500">
                     {props.box4Data}
                   </p>
                 </div>
@@ -68,7 +68,7 @@ export const OtherContent = (props) => {
                   <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box5Title}
                   </h6>
-                  <p className="text-sm text-gray-900">
+                  <p className="text-sm text-gray-500">
                     {props.box4Data}
                   </p>
                 </div>
@@ -78,7 +78,7 @@ export const OtherContent = (props) => {
                   <h6 className="mb-1 font-bold leading-5 text-white text-2xl">
                     {props.box6Title}
                   </h6>
-                  <p className="text-sm text-gray-900">
+                  <p className="text-sm text-gray-500">
                     {props.box4Data}
                   </p>
                 </div>

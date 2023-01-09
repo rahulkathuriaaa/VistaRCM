@@ -31,16 +31,16 @@ export const features = [
   {
     id: "feature-2",
     icon: shield,
-    title: "100% Secured",
+    title: "Partnership",
     content:
-      "Rather we consider our self as an extension of your team and we work as a partner with a clear objective of increased revenue.",
+      "We consider our self as an extension of your team and we work as a partner with a clear objective of increased revenue.",
   },
   {
     id: "feature-3",
     icon: send,
     title: "Transparency",
     content:
-      "We improve the financial life of our provider, giving them the freedom to focus on patient care.",
+      "We believe that transparency is needed to create trust. We strive to be honest and have integrity.",
   },
 ];
 

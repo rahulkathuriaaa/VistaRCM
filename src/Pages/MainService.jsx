@@ -1,4 +1,4 @@
-import { Footer, Titlebar } from "../components";
+import { Clients, Footer, Titlebar } from "../components";
 import Type4 from "../components/Type4";
 import styles from "../style";
 const MainService = (props) =>{
@@ -9,6 +9,7 @@ const MainService = (props) =>{
 
             <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
+        <Clients/>
         <Footer/>
       </div>
     </div>

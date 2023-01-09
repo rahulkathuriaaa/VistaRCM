@@ -35,7 +35,7 @@ export const Type3 = (props) => {
             </span>{' '}
             {props.heading}
           </h2>
-          <p className="text-base text-gray-700 md:text-lg">
+          <p className="text-base text-gray-500 md:text-lg">
             {props.text}
           </p>
         </div>
