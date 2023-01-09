@@ -1,5 +1,6 @@
 import { blog1, blog2, blog3, blog4, blog5, bloghero, blog6 } from "../assets";
 import { Footer } from "../components";
+import styles from "../style";
 
 const Blog = () => {
   return (
@@ -156,7 +157,11 @@ const Blog = () => {
           </div>
         </div>
       </section>
-      
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
+        <Footer/>
+      </div>
+    </div>
     </div>
   );
 };

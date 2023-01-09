@@ -1,5 +1,5 @@
 import { Footer } from "../components";
-
+import styles from "../style";
 const TestimonialsPage = () => {
   return (
     <div >
@@ -204,7 +204,11 @@ I would like to send my thanks to your entire Ops team with our insurance billin
           </div>
         </div>
       </section>
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+      <div className={`${styles.boxWidth}`}>
       <Footer/>
+      </div>
+    </div>
     </div>
   );
 };

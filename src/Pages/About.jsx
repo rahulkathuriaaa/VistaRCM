@@ -366,9 +366,11 @@ We brought the most innovative and thought-advancing leaders in medical billing 
         </div>
       </div>
 
+      <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Footer />
+        <Footer/>
       </div>
+    </div>
     </div>
   );
 };
