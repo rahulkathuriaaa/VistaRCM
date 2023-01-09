@@ -261,7 +261,7 @@ const App = () => {
 
           <Route exact path="/service/revenue-cycle-management">
             <Common
-              title="VistaRCM Services"
+              // title="VistaRCM Services"
               text="Pre-Authorization"
               data={
                 <>

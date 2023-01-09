@@ -10,10 +10,12 @@ import {
   CursorArrowRaysIcon,
   LifebuoyIcon,
   PhoneIcon,
+  // EnvelopeIcon,
   PlayIcon,
   ShieldCheckIcon,
   // Squares2X2Icon,
   XMarkIcon,
+  EnvelopeIcon,
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { vistamobile, vistarcm } from '../assets'
@@ -115,7 +117,7 @@ const solutions = [
 ]
 const callsToAction = [
   // { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact', href: 'mailto:support@vistarcmsolutions.com', target:"_blank", icon: PhoneIcon },
+  { name: 'Contact', href: 'mailto:support@vistarcmsolutions.com', target:"_blank", icon: EnvelopeIcon },
 ]
 const resources = [
   {

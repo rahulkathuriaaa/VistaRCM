@@ -45,9 +45,9 @@ const Titlebar = (props) => {
       //     {props.headTitle}
       //     </b>
       //   </div>
-      <div className=" -z-[200]">
+      <div className="min-w-full -z-[200]">
 
-        <div className="w-full h-60 shadow-2x1 overflow-hidden relative">
+        <div className="w-full h-60 shadow-2x1 overflow-hidden relative min-w-full">
           <img className="absolute inset-0 h-full w-full object-cover" src={props.headImage} alt="" />
           <div className="absolute inset-0 bg-gray-900 bg-opacity-50 "></div>
           <div className="flex h-full items-center justify-center relative">

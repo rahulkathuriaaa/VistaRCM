@@ -31,7 +31,7 @@ export const Type3 = (props) => {
                   height="24"
                 />
               </svg> */}
-              <span className="relative">The</span>
+              {/* <span className="relative">The</span> */}
             </span>{' '}
             {props.heading}
           </h2>

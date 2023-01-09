@@ -6,6 +6,7 @@ import styles from "../style";
 import TitleBar from "../components/TitleBar"
 import { Context, Footer, Map, Testimonials } from "../components";
 import { physicianbilling } from "../assets";
+import Map2 from "../components/Map2";
 
 const AboutUsPage = () => (
   <div className="bg-primary w-full overflow-hidden">
@@ -29,7 +30,7 @@ const AboutUsPage = () => (
     <br />
     <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
-        <Map/>
+        <Map2/>
         <Testimonials/>
         <Footer/>
       </div>

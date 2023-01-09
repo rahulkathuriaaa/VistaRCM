@@ -1,4 +1,4 @@
-import { bloghero } from "../assets";
+import { blog1, blog2, blog3, blog4, bloghero } from "../assets";
 import { Footer } from "../components";
 
 const Blog = () => {
@@ -35,7 +35,7 @@ const Blog = () => {
               <img
                 role="presentation"
                 className="object-cover w-full rounded h-44 bg-gray-500"
-                src="https://source.unsplash.com/random/480x360?1"
+                src={blog2}
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
@@ -54,7 +54,7 @@ const Blog = () => {
               <img
                 role="presentation"
                 className="object-cover w-full rounded h-44 bg-gray-500"
-                src="https://source.unsplash.com/random/480x360?2"
+                src={blog1}
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
@@ -73,7 +73,7 @@ const Blog = () => {
               <img
                 role="presentation"
                 className="object-cover w-full rounded h-44 bg-gray-500"
-                src="https://source.unsplash.com/random/480x360?3"
+                src={blog3}
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">
@@ -92,7 +92,7 @@ const Blog = () => {
               <img
                 role="presentation"
                 className="object-cover w-full rounded h-44 bg-gray-500"
-                src="https://source.unsplash.com/random/480x360?4"
+                src={blog4}
               />
               <div className="p-6 space-y-2">
                 <h3 className="text-2xl font-semibold group-hover:underline group-focus:underline">

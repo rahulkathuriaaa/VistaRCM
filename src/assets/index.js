@@ -62,6 +62,10 @@ import ar from './ar.jpeg';
 import medicalcoding from './medicalcoding.jpg';
 import getintouch from './getintouch.jpg';
 import careers from './careers.jpg';
+import blog1 from './blog1.jpg';
+import blog2 from './blog2.jpg';
+import blog3 from './blog3.jpg';
+import blog4 from './blog4.jpg';
 export {
   airbnb,
   bill,
@@ -126,4 +130,8 @@ export {
   medicalcoding,
   getintouch,
   careers,
+  blog1,
+  blog2,
+  blog3,
+  blog4,
 };
