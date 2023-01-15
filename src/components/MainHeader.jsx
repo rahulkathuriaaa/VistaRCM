@@ -270,7 +270,7 @@ export default function MainHeader() {
                 <>
                   <Popover.Button
                     className={classNames(
-                      open ? 'text-gray-900' : 'text-gray-500',
+                      open ? '' : '',
                       'group inline-flex items-center rounded-md text-base font-medium text-gray-500 hover:text-white focus:outline-none'
                     )}
                   >
@@ -278,7 +278,7 @@ export default function MainHeader() {
                     <ChevronDownIcon
                       className={classNames(
                         open ? 'text-gray-600' : 'text-gray-400',
-                        'ml-2 h-5 w-5 group-hover:text-gray-500'
+                        'ml-2 h-5 w-5 '
                       )}
                       aria-hidden="true"
                     />
