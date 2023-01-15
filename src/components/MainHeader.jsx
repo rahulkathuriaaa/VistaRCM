@@ -19,7 +19,7 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { vistamobile, vistarcm } from '../assets'
-import { Link } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
 // import './MainHeader.css';
 // import CheckOutsideClick from './CheckOutsideClick'
 
@@ -68,7 +68,7 @@ const solutions = [
   //   icon: CursorArrowRaysIcon,
   // },
   {
-    name: 'Billing, Denial Management and A/R Follow Up',
+    name: 'Billing, Denial Management & A/R ',
     description: ' ',
     href: '/service/billing-Denial Management-A/R',
     icon: CursorArrowRaysIcon,
@@ -214,7 +214,7 @@ export default function MainHeader() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel  className="absolute z-10 -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
+                    <Popover.Panel  className="absolute z-[999] -ml-4 mt-3 w-screen max-w-md transform px-2 sm:px-0 lg:left-1/2 lg:ml-0 lg:-translate-x-1/2">
                       <div className="lg:h-96 rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 overflow-y:scroll" >
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8 scrollbar scrollbar-thumb-rose-500 scrollbar-track-slate-700" >
                           {solutions.map((item) => (
@@ -293,7 +293,7 @@ export default function MainHeader() {
                     leaveFrom="opacity-100 translate-y-0"
                     leaveTo="opacity-0 translate-y-1"
                   >
-                    <Popover.Panel className="absolute left-1/2 z-10 mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
+                    <Popover.Panel className="absolute left-1/2 z-[999] mt-3 w-screen max-w-md -translate-x-1/2 transform px-2 sm:px-0">
                       <div className="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
                         <div className="relative grid gap-6 bg-white px-5 py-6 sm:gap-8 sm:p-8">
                           {resources.map((item) => (
@@ -316,7 +316,7 @@ export default function MainHeader() {
                         </div>
                         <div className="bg-gray-50 px-5 py-5 sm:px-8 sm:py-8">
                           <div>
-                            <h3 className="text-base font-medium text-gray-500">Recent Posts</h3>
+                            <h3 className="text-base font-medium text-gray-500">Blogs</h3>
                             <ul role="list" className="mt-4 space-y-4">
                               {recentPosts.map((post) => (
                                 <li key={post.id} className="truncate text-base">
@@ -360,7 +360,7 @@ export default function MainHeader() {
           </div>
         </div>
       </div>
-
+              {/* Mobile view */}
       <Transition
         as={Fragment}
         enter="duration-200 ease-out bg-white"
@@ -371,8 +371,10 @@ export default function MainHeader() {
         leaveTo="opacity-0 scale-95"
         // className="bg-white relative top-8"
       >
-        <Popover.Panel focus className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden">
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-50">
+        
+      
+        <Popover.Panel focus className="absolute inset-x-0 z-[999] top-0 origin-top-right transform p-2 transition md:hidden">
+          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-[999]">
             <div className="px-5 pt-5 pb-6">
               <div className="flex items-center justify-between">
                 <div>
@@ -392,68 +394,72 @@ export default function MainHeader() {
               <div className="mt-6">
                 <nav className="grid gap-y-8">
                   {solutions.map((item) => (
-                    <Popover.Button>
-                      <div>
+                    // <Popover.Button>
+                        <Popover.Button as={Link}  to={item.href}
 
-                    <a
+                        >
+                      <div>
+                    {/* <Link                     
                     // onClick={()=>{
-                    //   handleClickOpen()
+                    //   close()
                     //   console.log('click mobile')
                     // }}
+                    
                       key={item.name}
-                      href={item.href}
-                      // className={open?`sr-only` : `-m-3 flex items-center rounded-md p-3 hover:bg-gray-50`}
+                      to={item.href}
+                      // className={open?`sr-only` : m-3 fl`-ex items-center rounded-md p-3 hover:bg-gray-50`}
                       className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
-                    >
-                      <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" />
+                    > */}
+                      
+                      {/* <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" /> */}
                       <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                    </a>
+                    {/* </Link> */}
                       </div>
-                    </Popover.Button>
+
+                        </Popover.Button>
+                      
+                    //  </Popover.Button>
                   ))}
+
                 </nav>
               </div>
             </div>
             <div className="space-y-6 py-6 px-5">
               <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                {/* <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Pricing
-                </a> */}
+                <Popover.Button as={Link} to="/about/blogs" className="text-base font-medium text-gray-900 hover:text-gray-700"
+                >
+                  Blogs
+                </Popover.Button>
 
-                {/* <a href="#" className="text-base font-medium text-gray-900 hover:text-gray-700">
-                  Docs
-                </a> */}
+
                 {resources.map((item) => (
-                  <Popover.Button>
-
-                  <a
-                    key={item.name}
-                    href={item.href}
-                    className="text-base font-medium text-gray-900 hover:text-gray-700"
+                  <Popover.Button as={Link} to={item.href}
                   >
+                    <span className="text-base font-medium text-gray-900 hover:text-gray-700"
+>
                     {item.name}
-                  </a>
+
+                    </span>
+
                   </Popover.Button>
                 ))}
               </div>
               <div>
-                <Link
-                  href="#"
+                <Popover.Button as={Link}
+                  to="https://docs.google.com/forms/d/e/1FAIpQLSdPPPSfMK7sKrTi2pAyr-zUbNLAIk1wvHeZJusZYNiWOKRbBA/viewform"
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700"
                 >
                   Book a free trial
-                </Link>
-                {/* <p className="mt-6 text-center text-base font-medium text-gray-500">
-                  Existing customer?{' '}
-                  <a href="#" className="text-indigo-600">
-                    Sign in
-                  </a>
-                </p> */}
+                </Popover.Button>
+                
               </div>
             </div>
           </div>
         </Popover.Panel>
       </Transition>
+    
     </Popover>
+
+    
   )
 }

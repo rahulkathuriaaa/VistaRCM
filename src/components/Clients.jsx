@@ -1,4 +1,4 @@
-import { airbnb, binance, dropbox, advancedmd, alleva, collectly, InboxHealth, modmed, medicusit, imagetrend, elico, drchrono, GreenWay, Kipu, waystar, eclinicalworks, cerner, experity, meditech, cpsi, medstreaming, HST, bestnotes, sunwave, theranest } from "../assets";
+import { airbnb, binance, dropbox, advancedmd, alleva, collectly, InboxHealth, modmed, medicusit, imagetrend, elico, drchrono, GreenWay, Kipu, waystar, eclinicalworks, cerner, experity, meditech, cpsi, medstreaming, HST, bestnotes, sunwave, theranest, coinbase, } from "../assets";
 import styles from "../style";
 import './Client.css';
 const Clients = () => (
@@ -32,9 +32,9 @@ const Clients = () => (
          <div className="slide">
             <img src={binance}/>
         </div>
-         <div className="slide">
+         {/* <div className="slide">
             <img src={dropbox}/>
-        </div>
+        </div> */}
         <div className="slide">
             <img src={advancedmd}/>
         </div>
@@ -44,9 +44,9 @@ const Clients = () => (
         <div className="slide">
             <img src={collectly}/>
         </div>
-        <div className="slide">
+        {/* <div className="slide">
             <img src={InboxHealth}/>
-        </div>
+        </div> */}
         <div className="slide">
             <img src={modmed}/>
         </div>
@@ -56,20 +56,20 @@ const Clients = () => (
         {/* <div className="slide">
             <img src={zoll}/>
         </div> */}
-        <div className="slide">
+        {/* <div className="slide">
             <img src={imagetrend}/>
-        </div>
-        <div className="slide">
+        </div> */}
+        {/* <div className="slide">
             <img src={elico}/>
-        </div>
+        </div> */}
         <div className="slide">
             <img src={drchrono}/>
         </div>
+        {/* <div className="slide">
+            <img src={ecw}/>
+        </div> */}
         <div className="slide">
-            <img src={GreenWay}/>
-        </div>
-        <div className="slide">
-            <img src={Kipu}/>
+            <img src={coinbase}/>
         </div>
         <div className="slide">
             <img src={waystar}/>

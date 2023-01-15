@@ -95,23 +95,23 @@ export const footerLinks = [
     links: [
       {
         name: "Eligibility and Benefit Verification",
-        link: "https://www.hoobank.com/content/",
+        link: "/service/eligibility-verification",
       },
       {
         name: "Medical Coding",
-        link: "https://www.hoobank.com/how-it-works/",
+        link: "/service/medical-coding",
       },
       {
         name: "Credentialing",
-        link: "https://www.hoobank.com/create/",
+        link: "/service/phycisian-credentialing",
       },
       {
         name: "Pre-Authorization",
-        link: "https://www.hoobank.com/explore/",
+        link: "/service/revenue-cycle-management",
       },
       {
-        name: "Terms & Services",
-        link: "https://www.hoobank.com/terms-and-services/",
+        name: "Billing, Denial Management & A/R",
+        link: "/service/billing-Denial Management-A/R",
       },
     ],
   },
@@ -120,23 +120,23 @@ export const footerLinks = [
     links: [
       {
         name: "About VistaRCM",
-        link: "https://www.hoobank.com/help-center/",
+        link: "/aboutvistarcm",
       },
       {
         name: "Contact Us",
-        link: "https://www.hoobank.com/partners/",
+        link: "/about",
       },
       {
         name: "Careers",
-        link: "https://www.hoobank.com/suggestions/",
+        link: "/about/careers",
       },
       {
         name: "Blog",
-        link: "https://www.hoobank.com/blog/",
+        link: "/about/blogs",
       },
       {
         name: "Testimonials",
-        link: "https://www.hoobank.com/newsletters/",
+        link: "/about/testimonials",
       },
     ],
   },
@@ -145,11 +145,11 @@ export const footerLinks = [
     links: [
       {
         name: "Book a free trial",
-        link: "https://www.hoobank.com/our-partner/",
+        link: "https://docs.google.com/forms/d/e/1FAIpQLSdPPPSfMK7sKrTi2pAyr-zUbNLAIk1wvHeZJusZYNiWOKRbBA/viewform",
       },
       {
         name: "Contact",
-        link: "https://www.hoobank.com/become-a-partner/",
+        link: "/about",
       },
     ],
   },

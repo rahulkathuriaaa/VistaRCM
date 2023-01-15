@@ -1,6 +1,5 @@
-
- .slider{
-    height: 100px;
+.slider{
+    height: 250px;
     margin: auto;
     position: relative;
     width: 100%;
@@ -28,14 +27,14 @@
     }
 }
  .slide{
-    height: 100px;
+    height: 200px;
     width: 250px;
     display: flex;
     align-items: center;
     padding: 15px;
     perspective: 100px;
  }
- 
+
  img
      {
     width: 100%;

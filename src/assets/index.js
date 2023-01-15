@@ -68,6 +68,10 @@ import blog3 from './blog3.jpg';
 import blog4 from './blog4.jpg';
 import blog5 from './blog5.jpg';
 import blog6 from './blog6.jpg';
+import ecw from './ecw.jpg';
+import career1 from './career1.jpg';
+import career2 from './career2.jpg';
+import career3 from './career3.jpg';
 export {
   airbnb,
   bill,
@@ -138,4 +142,9 @@ export {
   blog4,
   blog5,
   blog6,
+  ecw,
+  career1,
+  career2,
+  career3,
+
 };
