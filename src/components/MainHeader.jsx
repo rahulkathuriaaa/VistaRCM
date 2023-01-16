@@ -445,11 +445,14 @@ export default function MainHeader() {
                 ))}
               </div>
               <div>
-                <Popover.Button as={Link}
-                  to="https://docs.google.com/forms/d/e/1FAIpQLSdPPPSfMK7sKrTi2pAyr-zUbNLAIk1wvHeZJusZYNiWOKRbBA/viewform"
+                <Popover.Button 
+                  
                   className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700"
                 >
-                  Book a free trial
+                  <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdPPPSfMK7sKrTi2pAyr-zUbNLAIk1wvHeZJusZYNiWOKRbBA/viewform">
+                    Book a free trial
+                    </a>
                 </Popover.Button>
                 
               </div>
