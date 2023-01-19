@@ -28,10 +28,6 @@ const Common = (props) =>{
             <div className={`${styles.boxWidth}`}>
               <Context title={props.title} text={props.text} data={props.data}/>
               { show && <Type3 head1={props.head1} data1={props.data1} head2={props.head2} data2={props.data2} head3={props.head3} data3={props.data3} heading={props.heading}/>}
-              <br />
-              <br />
-              <br />
-              <br />
               
 
               <Clients/>

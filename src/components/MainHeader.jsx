@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
-import { Popover, Transition } from '@headlessui/react'
+import { Popover, Transition, } from '@headlessui/react'
+import { Menu } from '@headlessui/react'
 import { useState } from 'react'
 import {
   // ArrowPathIcon,
@@ -19,18 +20,13 @@ import {
 } from '@heroicons/react/24/outline'
 import { ChevronDownIcon } from '@heroicons/react/20/solid'
 import { vistamobile, vistarcm } from '../assets'
-import { Link, NavLink } from 'react-router-dom'
-// import './MainHeader.css';
-// import CheckOutsideClick from './CheckOutsideClick'
+import { Link} from 'react-router-dom'
+
+
 
 
 const solutions = [
-  // {
-  //   name: 'Physicians Billing Services',
-  //   description: '',
-  //   href: '/service/physician-billing-services',
-  //   icon: ChartBarIcon,
-  // },
+  
   {
     name: 'Eligibility & Benefit Verification',
     description: ' ',
@@ -43,48 +39,14 @@ const solutions = [
     href: '/service/medical-coding',
     icon: CursorArrowRaysIcon,
   },
-  // {
-  //   name: 'Medical Billing And Collections',
-  //   description: ' ',
-  //   href: '/service/medical-billing-and-collections',
-  //   icon: CursorArrowRaysIcon,
-  // },
-  // {
-  //   name: 'Fee Schedule Evaluations',
-  //   description: ' ',
-  //   href: '/service/fee-schedule-evaluations',
-  //   icon: CursorArrowRaysIcon,
-  // },
-  // {
-  //   name: 'Healthcare Contract Management',
-  //   description: ' ',
-  //   href: '/service/healthcare-contract-management',
-  //   icon: CursorArrowRaysIcon,
-  // },
-  // {
-  //   name: ' Healthcare Denial Management',
-  //   description: ' ',
-  //   href: '/service/healthcare-denial-management',
-  //   icon: CursorArrowRaysIcon,
-  // },
+
   {
     name: 'Billing, Denial Management & A/R ',
     description: ' ',
     href: '/service/billing-Denial Management-A/R',
     icon: CursorArrowRaysIcon,
   },
-  // {
-  //   name: 'Practice Management',
-  //   description: ' ',
-  //   href: '/service/physician-medical-practice-management',
-  //   icon: CursorArrowRaysIcon,
-  // },
-  // {
-  //   name: 'Patient Eligibility Verification',
-  //   description: ' ',
-  //   href: '/service/eligibility-verification',
-  //   icon: CursorArrowRaysIcon,
-  // },
+ 
  
   {
     name: 'Physician Credentialing ',
@@ -98,25 +60,9 @@ const solutions = [
     href: '/service/revenue-cycle-management',
     icon: CursorArrowRaysIcon,
   },
-  // { name: 'Medical Billing And Collections',
-  //  description: "Your customers' data will be safe and secure.", 
-  //  href: 'service/medical-billing-and-collection', 
-  //  icon: ShieldCheckIcon },
-  // {
-  //   name: 'Integrations',
-  //   description: "Connect with third-party tools that you're already using.",
-  //   href: 'service/medical-billing-and-collection',
-  //   icon: Squares2X2Icon,
-  // },
-  // {
-  //   name: 'Automations',
-  //   description: 'Build strategic funnels that will drive your customers to convert',
-  //   href: '#',
-  //   icon: ArrowPathIcon,
-  // },
+ 
 ]
 const callsToAction = [
-  // { name: 'Watch Demo', href: '#', icon: PlayIcon },
   { name: 'Contact', href: 'mailto:support@vistarcmsolutions.com', target:"_blank", icon: EnvelopeIcon },
 ]
 const resources = [
@@ -135,15 +81,11 @@ const resources = [
     href: '/about/careers',
     icon: CalendarIcon,
   },
-//   { name: 'Contact Us', 
-//   href: '/about', 
-//   icon: ShieldCheckIcon 
-// },
+
 ]
 const recentPosts = [
   { id: 1, name: 'Solutions for the Revenue Cycle and clinical labor shortage', href: '/about/blogs' },
-  // { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  // { id: 3, name: 'Improve your customer experience', href: '#' },
+
 ]
 
 function classNames(...classes) {
@@ -160,12 +102,16 @@ export default function MainHeader() {
   const handleClose = () =>{
     setOpen(false);
   }
-  // const [show, setShow] = useState(true)
+
+  const [submenuVisible, setSubmenuVisible] = useState(false);
+  const [submenuVisible2, setSubmenuVisible2] = useState(false);
+
+  
   return (
     <Popover className="relative bg-black">
       <div className="mx-auto max-w-7xl px-4 sm:px-6">
         <div className="flex items-center justify-between py-6 md:justify-start md:space-x-10">
-          <div className="flex justify-start lg:w-0 lg:flex-1">
+           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link to="/">
               <span className="sr-only">Your Company</span>
               <img
@@ -175,16 +121,200 @@ export default function MainHeader() {
               />
             </Link>
           </div>
-          <div className="-my-2 -mr-2 md:hidden">
+          {/*<div className="-my-2 -mr-2 md:hidden">
             
             <Popover.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none ">
               <span className="sr-only">Open menu</span>
               <Bars3Icon className="h-6 w-6" aria-hidden="true" />
             </Popover.Button>
-          </div>
+          </div> */}
+          
+          <Menu as="div" className="relative inline-block text-left -my-2 -mr-2 z-[999] md:hidden">
+        {({ close, open }) => (
+          <Fragment>
+            <div >
+              <Menu.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 focus:outline-none ">
+              <span className="sr-only">Options</span>
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
+              </Menu.Button>
+            </div>
+            <Menu.Items className="absolute right-0 mt-2 w-56 origin-top-right divide-y divide-gray-100 rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+              <div className="px-1 py-1 ">
+              <Menu.Item as={Link} to='/'>
+                  {({ active }) => (
+                    <button
+                      className={`${
+                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    >
+                      Home
+                    </button>
+                  )}
+                </Menu.Item>
+                
+                <Menu.Item>
+                  {({ active }) => (
+                    <button
+                    className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setSubmenuVisible((prev) => !prev);
+                      }}
+                    >
+                      Our Services
+                      <ChevronDownIcon className="h-5 w-5" />
+                    </button>
+                  )}
+                </Menu.Item>
+                {submenuVisible && (
+                  <Fragment>
+                    <Menu.Item as={Link} to='/service/eligibility-verification'>
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          Eligibility & Benefit Verification
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item as={Link} to='/service/medical-coding'>
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          Medical Coding
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item as={Link} to='/service/billing-Denial%20Management-A/R'>
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          Billing, Denial & A/R
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item  as={Link} to='/service/phycisian-credentialing'>
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          Provider Credentialing 
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item  as={Link} to='/service/revenue-cycle-management'>
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          Pre-Authorization
+                        </button>
+                      )}
+                    </Menu.Item>
+                  </Fragment>
+                )}
+              </div>
+              <div className="px-1 py-1">
+                <Menu.Item as={Link} to='/about/blogs'>
+                  {({ active }) => (
+                    <button
+                      className={`${
+                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    >
+                      Blogs
+                    </button>
+                  )}
+                </Menu.Item>
+                <Menu.Item>
+                  {({ active }) => (
+                    <button
+                    className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+                      onClick={(e) => {
+                        e.preventDefault();
+                        setSubmenuVisible2((prev) => !prev);
+                      }}
+                    >
+                      About Us
+                      <ChevronDownIcon className="h-5 w-5" />
+                    </button>
+                  )}
+                </Menu.Item>
+                {submenuVisible2 && (
+                  <Fragment>
+                    <Menu.Item as={Link} to='/aboutvistarcm'>
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          About VistaRCM
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item as={Link} to='/about'>
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          Contact
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item as={Link} to='/about/testimonials'> 
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          Testimonials
+                        </button>
+                      )}
+                    </Menu.Item>
+                    <Menu.Item as={Link} to='/about/careers'>
+                      {({ active }) => (
+                        <button
+                          className=' text-gray-900 group flex w-full items-center rounded-md px-2 py-2 text-sm'
+
+                        >
+                          Careers
+                        </button>
+                      )}
+                    </Menu.Item>
+                  </Fragment>
+                )}
+              </div>
+              <div className="px-1 py-1">
+                <Menu.Item>
+                  {({ active }) => (
+                    <a
+                      href='https://docs.google.com/forms/d/e/1FAIpQLSdPPPSfMK7sKrTi2pAyr-zUbNLAIk1wvHeZJusZYNiWOKRbBA/viewform'
+                      className={`${
+                        active ? 'bg-violet-500 text-white' : 'text-gray-900'
+                      } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
+                    >
+                      Book a free trial
+                    </a>
+                  )}
+                </Menu.Item>
+              </div>
+            </Menu.Items>
+          </Fragment>
+        )}
+      </Menu>
+        {/* desktop navbar */}
           <Link to="/" className="text-base font-medium text-gray-500 hover:text-white hidden md:block">
               Home
             </Link>
+
           <Popover.Group as="nav" className="hidden space-x-10 md:flex">
               <Popover className="relative">
               {({ open,close }) => (
@@ -192,7 +322,7 @@ export default function MainHeader() {
                   <Popover.Button
                     className={classNames(
                       open ? '' : '',
-                      'group inline-flex items-center rounded-md text-base text-gray-500 hover:text-white font-medium hover:text-white focus:outline-none lg:h-2'
+                      'group inline-flex items-center rounded-md text-base text-gray-500 font-medium hover:text-white focus:outline-none lg:h-2'
                     )}
                   >
                     <span>Our Services</span>
@@ -360,106 +490,10 @@ export default function MainHeader() {
           </div>
         </div>
       </div>
-              {/* Mobile view */}
-      <Transition
-        as={Fragment}
-        enter="duration-200 ease-out bg-white"
-        enterFrom="opacity-0 scale-95 bg-white"
-        enterTo="opacity-100 scale-100 bg-white"
-        leave="duration-100 ease-in"
-        leaveFrom="opacity-100 scale-100"
-        leaveTo="opacity-0 scale-95"
-        // className="bg-white relative top-8"
-      >
-        
-      
-        <Popover.Panel focus className="absolute inset-x-0 z-[999] top-0 origin-top-right transform p-2 transition md:hidden">
-          <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5 z-[999]">
-            <div className="px-5 pt-5 pb-6">
-              <div className="flex items-center justify-between">
-                <div>
-                  <img
-                    className="h-8 w-auto"
-                    src={vistamobile}
-                    alt="Your Company"
-                  />
-                </div>
-                <div className="-mr-2">
-                  <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none ">
-                    <span className="sr-only">Close menu</span>
-                    <XMarkIcon className="h-6 w-6" aria-hidden="true" />
-                  </Popover.Button>
-                </div>
-              </div>
-              <div className="mt-6">
-                <nav className="grid gap-y-8">
-                  {solutions.map((item) => (
-                    // <Popover.Button>
-                        <Popover.Button as={Link}  to={item.href}
-
-                        >
-                      <div>
-                    {/* <Link                     
-                    // onClick={()=>{
-                    //   close()
-                    //   console.log('click mobile')
-                    // }}
-                    
-                      key={item.name}
-                      to={item.href}
-                      // className={open?`sr-only` : m-3 fl`-ex items-center rounded-md p-3 hover:bg-gray-50`}
-                      className="-m-3 flex items-center rounded-md p-3 hover:bg-gray-50"
-                    > */}
-                      
-                      {/* <item.icon className="h-6 w-6 flex-shrink-0 text-indigo-600" aria-hidden="true" /> */}
-                      <span className="ml-3 text-base font-medium text-gray-900">{item.name}</span>
-                    {/* </Link> */}
-                      </div>
-
-                        </Popover.Button>
-                      
-                    //  </Popover.Button>
-                  ))}
-
-                </nav>
-              </div>
-            </div>
-            <div className="space-y-6 py-6 px-5">
-              <div className="grid grid-cols-2 gap-y-4 gap-x-8">
-                <Popover.Button as={Link} to="/about/blogs" className="text-base font-medium text-gray-900 hover:text-gray-700"
-                >
-                  Blogs
-                </Popover.Button>
 
 
-                {resources.map((item) => (
-                  <Popover.Button as={Link} to={item.href}
-                  >
-                    <span className="text-base font-medium text-gray-900 hover:text-gray-700"
->
-                    {item.name}
 
-                    </span>
-
-                  </Popover.Button>
-                ))}
-              </div>
-              <div>
-                <Popover.Button 
-                  
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-black shadow-sm hover:bg-indigo-700"
-                >
-                  <a
-                  href="https://docs.google.com/forms/d/e/1FAIpQLSdPPPSfMK7sKrTi2pAyr-zUbNLAIk1wvHeZJusZYNiWOKRbBA/viewform">
-                    Book a free trial
-                    </a>
-                </Popover.Button>
-                
-              </div>
-            </div>
-          </div>
-        </Popover.Panel>
-      </Transition>
+             
     
     </Popover>
 
