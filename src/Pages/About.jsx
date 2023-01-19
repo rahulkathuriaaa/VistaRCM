@@ -297,11 +297,12 @@ We brought the most innovative and thought-advancing leaders in medical billing 
                 </a>
               </div>
               <div class="w-full max-w-xl xl:px-8 xl:w-5/12">
+                  
                 <div class="bg-white rounded shadow-2xl p-7 sm:p-10">
                   <h3 class="mb-4 text-xl font-semibold sm:text-center sm:mb-6 sm:text-2xl">
                     Get in touch
                   </h3>
-                  <form>
+                  <form action="https://formspree.io/f/xayzwlyw" method="POST">
                     <div class="mb-1 sm:mb-2">
                       <label
                         for="firstName"
