@@ -32,9 +32,13 @@ const AboutUsPage = () => (
       <div className={`${styles.boxWidth}`}>
         <Map2/>
         <Testimonials/>
-        <Footer/>
       </div>
     </div>
+    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+         <div className={`${styles.boxWidth}`}>
+        <Footer/>
+          </div>
+          </div>
   </div>
 );
 

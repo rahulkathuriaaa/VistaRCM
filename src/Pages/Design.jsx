@@ -4,8 +4,8 @@ import styles from "../style";
 
 const Design = (props) =>{
     return(
-        <div className="bg-primary w-full overflow-hidden">
-          <div className={`bg-primary ${styles.flexStart}`}>
+        <div className="bg-white w-full overflow-hidden">
+          <div className={`bg-white ${styles.flexStart}`}>
             <div className={`${styles.boxWidth}`}>
               <Titlebar headImage={props.headImage} headTitle={props.headTitle}/>
             </div>
@@ -21,7 +21,7 @@ const Design = (props) =>{
           <br />
           <br />
           <br /> */}
-          <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`bg-white ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
               <Type3
                title={props.title} 
@@ -39,9 +39,15 @@ const Design = (props) =>{
               <Stats/>
               <Clients/>
               <CTA/>
-              <Footer/>
+              
             </div>
           </div>
+
+          <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+            <div className={`${styles.boxWidth}`}>
+              <Footer/>
+              </div>
+            </div>
         </div>
       );
       

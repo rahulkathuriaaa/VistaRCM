@@ -1,16 +1,16 @@
 import { airbnb, binance, dropbox, advancedmd, alleva, collectly, InboxHealth, modmed, medicusit, imagetrend, elico, drchrono, GreenWay, Kipu, waystar, eclinicalworks, cerner, experity, meditech, cpsi, medstreaming, HST, bestnotes, sunwave, theranest, coinbase, } from "../assets";
 import styles from "../style";
 import './Client.css';
-const Clients = () => (
+const Clients = (props) => (
    
   <section className={`${styles.flexCenter} my-4`}>
     
     <div className={`${styles.flexCenter} flex-wrap w-full`}>
         <div>
 
-        <h1 className="text-6xl font-bold text-center text-white">Technology Platforms</h1>
+        <h1 className={`text-6xl font-bold text-center ${props.color}`}>Technology Platforms</h1>
         <br />
-        <p className="text-center text-xl text-white">We can work with any in-house software you use</p>
+        <p className={`text-center text-xl ${props.color}`}>We can work with any in-house software you use</p>
         </div>
         <br />
         <br />

@@ -4,7 +4,7 @@ import styles from "../style";
 
 const Careers = () => {
     return(
-      <div>
+      <div className="bg-white">
 
         <div className="relative ">
   <img src={careers} className="absolute inset-0 object-cover w-full h-full" alt="" />

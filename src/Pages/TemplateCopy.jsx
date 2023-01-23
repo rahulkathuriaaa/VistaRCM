@@ -4,16 +4,16 @@ import styles from "../style";
 
 const TemplateCopy = (props) =>{
     return(
-        <div className="bg-primary w-full overflow-hidden z-[5]">
+        <div className="bg-white w-full overflow-hidden z-[5]">
         {/* <br /> */}
-          <div className={`bg-primary ${styles.flexStart} `}>
+          <div className={`bg-white ${styles.flexStart} `}>
             <div className={`${styles.boxWidth}`}>
               <Titlebar headImage={props.headImage} headTitle={props.headTitle}/>
             </div>
           </div>
   
           {/* <br /> */}
-          <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+          <div className={`bg-white ${styles.paddingX} ${styles.flexCenter}`}>
             <div className={`${styles.boxWidth}`}>
               <Context3
                title={props.title} 
@@ -33,8 +33,12 @@ const TemplateCopy = (props) =>{
               <Stats/>
               <Clients/>
               <CTA/>
-              <Footer/>
             </div>
+          </div>
+          <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+         <div className={`${styles.boxWidth}`}>
+        <Footer/>
+          </div>
           </div>
         </div>
       );

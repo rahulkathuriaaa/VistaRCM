@@ -35,7 +35,7 @@ const Home = () => (
         <Business />
         <Billing />
         <CardDeal />
-        <Clients />
+        <Clients color="text-white"/>
         <CTA />
         <Footer />
       </div>
