@@ -8,9 +8,9 @@ const Clients = () => (
     <div className={`${styles.flexCenter} flex-wrap w-full`}>
         <div>
 
-        <h1 className="text-6xl font-bold text-center">Technology Platforms</h1>
+        <h1 className="text-6xl font-bold text-center text-white">Technology Platforms</h1>
         <br />
-        <p className="text-center text-xl">We can work with any in-house software you use</p>
+        <p className="text-center text-xl text-white">We can work with any in-house software you use</p>
         </div>
         <br />
         <br />
@@ -71,9 +71,9 @@ const Clients = () => (
         <div className="slide">
             <img src={coinbase}/>
         </div>
-        <div className="slide">
+        {/* <div className="slide">
             <img src={waystar}/>
-        </div>
+        </div> */}
         <div className="slide">
             <img src={eclinicalworks}/>
         </div>

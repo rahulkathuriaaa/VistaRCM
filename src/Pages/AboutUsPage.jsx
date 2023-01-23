@@ -9,9 +9,9 @@ import { physicianbilling } from "../assets";
 import Map2 from "../components/Map2";
 
 const AboutUsPage = () => (
-  <div className="bg-primary w-full overflow-hidden">
+  <div className="bg-white w-full overflow-hidden">
   
-    <div className={`bg-primary ${styles.flexStart}`}>
+    <div className={`bg-white ${styles.flexStart}`}>
       <div className={`${styles.boxWidth}`}>
         <TitleBar headTitle="Contact Us" headImage={physicianbilling}/>
       </div>
@@ -28,7 +28,7 @@ const AboutUsPage = () => (
     <br /> */}
     <br />
     <br />
-    <div className={`bg-primary ${styles.paddingX} ${styles.flexCenter}`}>
+    <div className={`bg-white ${styles.paddingX} ${styles.flexCenter}`}>
       <div className={`${styles.boxWidth}`}>
         <Map2/>
         <Testimonials/>
