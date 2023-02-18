@@ -14,9 +14,9 @@ const Map = () =>{
         </div>
         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
           <h2 className="title-font font-semibold text-black tracking-widest text-xs">EMAIL</h2>
-          <a className="text-indigo-500 leading-relaxed">support@vistarcmsolutions.com</a>
+          <a className="text-indigo-500 leading-relaxed">support@vistarcm.com</a>
           <h2 className="title-font font-semibold text-black tracking-widest text-xs mt-4">PHONE</h2>
-          <p className="leading-relaxed">123-456-7890</p>
+          <p className="leading-relaxed">302-319-9870</p>
         </div>
       </div>
     </div>

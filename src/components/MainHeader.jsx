@@ -63,7 +63,7 @@ const solutions = [
  
 ]
 const callsToAction = [
-  { name: 'Contact', href: 'mailto:support@vistarcmsolutions.com', target:"_blank", icon: EnvelopeIcon },
+  { name: 'Contact', href: 'mailto:support@vistarcm.com', target:"_blank", icon: EnvelopeIcon },
 ]
 const resources = [
   {

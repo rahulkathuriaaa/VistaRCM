@@ -120,7 +120,7 @@ const solutions = [
 ]
 const callsToAction = [
   // { name: 'Watch Demo', href: '#', icon: PlayIcon },
-  { name: 'Contact', href: 'mailto:support@vistarcmsolutions.com', target:"_blank", icon: EnvelopeIcon },
+  { name: 'Contact', href: 'mailto:support@vistarcm.com', target:"_blank", icon: EnvelopeIcon },
 ]
 const resources = [
   {
